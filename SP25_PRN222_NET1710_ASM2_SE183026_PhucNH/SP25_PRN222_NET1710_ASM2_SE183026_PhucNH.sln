@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychologyHealthCare.Repository", "PsychologyHealthCare.Repository\PsychologyHealthCare.Repository.csproj", "{45AD10B3-0272-B7D8-88FB-8FA2A0B3C11B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychologyHealthCare.Service", "PsychologyHealthCare.Service\PsychologyHealthCare.Service.csproj", "{01352153-FD04-2B85-39C0-24926CF01FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychologyHealthCare.RazorWebApp", "PsychologyHealthCare.RazorWebApp\PsychologyHealthCare.RazorWebApp.csproj", "{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45AD10B3-0272-B7D8-88FB-8FA2A0B3C11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45AD10B3-0272-B7D8-88FB-8FA2A0B3C11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45AD10B3-0272-B7D8-88FB-8FA2A0B3C11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45AD10B3-0272-B7D8-88FB-8FA2A0B3C11B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01352153-FD04-2B85-39C0-24926CF01FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01352153-FD04-2B85-39C0-24926CF01FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01352153-FD04-2B85-39C0-24926CF01FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01352153-FD04-2B85-39C0-24926CF01FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A7A035B-BC8E-4F62-8070-58C2EE798AB2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,56 @@
+﻿@page
+@model PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings.DeleteModel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Appointment Tracking</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Name)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Name)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.StartTime)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.StartTime)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.EndTime)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.EndTime)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.CreatedDate)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.CreatedDate)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.UpdatedDate)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.UpdatedDate)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Rating)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Rating)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Holder)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Holder)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Address)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Address)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Type)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Type)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.SystemStatus)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.SystemStatus)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.ProgramTrackingId)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.ProgramTrackingId)</dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="AppointmentTracking.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </form>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/js/health.js"></script>
