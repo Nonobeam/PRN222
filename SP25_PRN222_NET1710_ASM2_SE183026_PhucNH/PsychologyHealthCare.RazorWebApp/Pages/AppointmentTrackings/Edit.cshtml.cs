@@ -34,7 +34,7 @@ namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
                 return NotFound();
             }
             AppointmentTracking = surveyquest;
-            ViewData["ProgramId"] = new SelectList(await _programService.GetAllAsync(), "Id", "Title");
+            ViewData["ProgramId"] = new SelectList(await _programService.GetAllAsync(), "Id", "Name");
             return Page();
         }
 

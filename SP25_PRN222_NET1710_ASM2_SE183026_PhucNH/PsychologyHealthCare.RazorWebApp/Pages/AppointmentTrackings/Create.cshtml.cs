@@ -20,7 +20,7 @@ namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
 
         public async Task<IActionResult> OnGet()
         {
-            ViewData["ProgramId"] = new SelectList(await _programService.GetAllAsync(), "Id", "Title");
+            ViewData["ProgramId"] = new SelectList(await _programService.GetAllAsync(), "Id", "Name");
             return Page();
         }
 

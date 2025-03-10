@@ -3,12 +3,13 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Numerics;
 
 namespace PsychologyHealthCare.Repository.Models;
 
 public partial class AppointmentTracking
 {
-    public string Id { get; set; }
+    public int Id { get; set; }
 
     public string Name { get; set; }
 
@@ -30,7 +31,7 @@ public partial class AppointmentTracking
 
     public string Type { get; set; }
 
-    public string ProgramTrackingId { get; set; }
+    public int ProgramTrackingId { get; set; }
 
     public virtual ProgramTracking ProgramTracking { get; set; }
 }

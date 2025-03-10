@@ -6,7 +6,7 @@ namespace PsychologyHealthCare.Service
     public interface IAppointmentTrackingService
     {
         Task<List<AppointmentTracking>> GetAllAsync();
-        Task<AppointmentTracking?> GetById(string id);
+        Task<AppointmentTracking?> GetById(int id);
         Task<int> Create(AppointmentTracking appointmentTracking);
         Task<int> Update(AppointmentTracking appointmentTracking);
         Task<bool> Delete(AppointmentTracking appointment);
@@ -22,7 +22,7 @@ namespace PsychologyHealthCare.Service
             return await _repository.GetAllAppointmentTrackingsAsync();
         }
 
-        public async Task<AppointmentTracking?> GetById(string id)
+        public async Task<AppointmentTracking?> GetById(int id)
         {
             return await _repository.GetAppointmentTrackingByIdAsync(id);
         }

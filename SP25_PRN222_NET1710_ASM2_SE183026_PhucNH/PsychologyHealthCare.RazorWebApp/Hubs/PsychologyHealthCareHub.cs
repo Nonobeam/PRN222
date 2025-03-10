@@ -36,7 +36,7 @@ namespace PsychologyHeathCare.RazorWebApp.Hubs
 			}
 		}
 
-		public async Task DeleteAppointment(string id)
+		public async Task DeleteAppointment(int id)
 		{
 			await Clients.All.SendAsync("Delete_Appointment", id);
 			AppointmentTracking appointment = (await _appointmentService.GetById(id))!;

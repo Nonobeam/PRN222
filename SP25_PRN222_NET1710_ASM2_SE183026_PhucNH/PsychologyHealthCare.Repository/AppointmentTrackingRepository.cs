@@ -12,7 +12,7 @@ namespace PsychologyHealthCare.Repository
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<AppointmentTracking?> GetAppointmentTrackingByIdAsync(string id)
+        public async Task<AppointmentTracking?> GetAppointmentTrackingByIdAsync(int id)
         {
             return await _context.AppointmentTrackings
                 .Include(a => a.ProgramTracking)

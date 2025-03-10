@@ -23,7 +23,7 @@ namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
         [BindProperty]
         public AppointmentTracking AppointmentTracking { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(string id)
+        public async Task<IActionResult> OnGetAsync(int id)
         {
             if (id == null)
             {
@@ -43,7 +43,7 @@ namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(string id)
+        public async Task<IActionResult> OnPostAsync(int id)
         {
             if (id == null)
             {
