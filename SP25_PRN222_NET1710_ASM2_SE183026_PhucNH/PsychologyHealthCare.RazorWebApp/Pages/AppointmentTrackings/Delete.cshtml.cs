@@ -23,39 +23,39 @@ namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
         [BindProperty]
         public AppointmentTracking AppointmentTracking { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(int id)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var surveyquest = await _appointmentService.GetById(id);
+            var appointment = await _appointmentService.GetById(id);
 
-            if (surveyquest == null)
+            if (appointment == null)
             {
                 return NotFound();
             }
             else
             {
-                AppointmentTracking = surveyquest;
+                AppointmentTracking = appointment;
             }
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int id)
+        public async Task<IActionResult> OnPostAsync(string id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var surveyquest = await _appointmentService.GetById(id);
-            if (surveyquest != null)
+            var appointment = await _appointmentService.GetById(id);
+            if (appointment != null)
             {
-                AppointmentTracking = surveyquest;
-                await _appointmentService.Delete(surveyquest);
-                await _hubContext.Clients.All.SendAsync("Delete_SurveyQuest", id);
+                AppointmentTracking = appointment;
+                await _appointmentService.Delete(appointment);
+                await _hubContext.Clients.All.SendAsync("Delete_Appointment", id);
             }
 
             return RedirectToPage("./Index");

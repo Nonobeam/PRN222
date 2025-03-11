@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PsychologyHealthCare.MVCWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db37f7f13eb77f0217f0a54427f8a9f7b5022caa")]
 [assembly: System.Reflection.AssemblyProductAttribute("PsychologyHealthCare.MVCWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PsychologyHealthCare.MVCWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

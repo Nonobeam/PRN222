@@ -12,7 +12,7 @@ namespace PsychologyHealthCare.Repository
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<ProgramTracking?> GetProgramTrackingByIdAsync(int id)
+        public async Task<ProgramTracking?> GetProgramTrackingByIdAsync(string id)
         {
             return await _context.ProgramTrackings
                 .FirstOrDefaultAsync(p => p.Id == id && p.SystemStatus == "ACTIVE");

@@ -1,0 +1,116 @@
+﻿@page
+@model PharmaceuticalManagement_NguyenHuuPhuc.Pages.Medical.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<form method="get" asp-page="./Index">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="control-label">ActiveIngredients</label>
+                <input type="text" name="active" value=@Model.Active class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="control-label">ExpirationDate</label>
+                <input type="text" name="expire" value=@Model.Expire class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="control-label">WarningsAndPrecautions</label>
+                <input type="text" name="warn" value=@Model.Warn class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-3 mt-4">
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<p>
+    <a asp-page="./Create" class="btn btn-primary">Create New</a>
+</p>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].MedicineId)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].MedicineName)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].ActiveIngredients)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].ExpirationDate)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].DosageForm)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].WarningsAndPrecautions)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].Manufacturer.ManufacturerName)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="appointmentList">
+            @foreach (var item in Model.MedicineInformation)
+            {
+                <tr id="@item.MedicineId">
+                    <td>@Html.DisplayFor(modelItem => item.MedicineId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.MedicineName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ActiveIngredients)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ExpirationDate)</td>
+                    <td>@Html.DisplayFor(modelItem => item.DosageForm)</td>
+                    <td>@Html.DisplayFor(modelItem => item.WarningsAndPrecautions)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Manufacturer.ManufacturerName)</td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.MedicineId">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.MedicineId">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.MedicineId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <nav>
+        <ul class="pagination">
+            @if (Model.PageNumber > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       asp-route-pageNumber="@(Model.PageNumber - 1)"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-active="@Model.Active"
+                       asp-route-expire="@Model.Expire"
+                       asp-route-warn="@Model.Warn">Previous</a>
+                </li>
+            }
+
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                    <a class="page-link"
+                       asp-route-pageNumber="@i"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-active="@Model.Active"
+                       asp-route-expire="@Model.Expire"
+                       asp-route-warn="@Model.Warn">@i</a>
+                </li>
+            }
+
+            @if (Model.PageNumber < Model.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       asp-route-pageNumber="@(Model.PageNumber + 1)"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-active="@Model.Active"
+                       asp-route-expire="@Model.Expire"
+                       asp-route-warn="@Model.Warn">Next</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

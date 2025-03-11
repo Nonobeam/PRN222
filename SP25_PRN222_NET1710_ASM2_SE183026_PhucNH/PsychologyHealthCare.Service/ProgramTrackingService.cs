@@ -9,6 +9,6 @@ namespace PsychologyHealthCare.Service
 
         public async Task<List<ProgramTracking>> GetAllAsync() => await _repository.GetAllAsync();
 
-        public async Task<ProgramTracking> GetById(int id) => await _repository.GetByIdAsync(id);
+        public async Task<ProgramTracking> GetById(string id) => await _repository.GetByIdAsync(id);
     }
 }

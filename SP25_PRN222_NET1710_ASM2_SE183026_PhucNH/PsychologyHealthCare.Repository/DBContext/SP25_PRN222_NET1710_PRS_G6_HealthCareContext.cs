@@ -54,7 +54,9 @@ public partial class SP25_PRN222_NET1710_PRS_G6_HealthCareContext : DbContext
             entity.ToTable("Appointment_Tracking");
 
             entity.Property(e => e.Id)
-                .ValueGeneratedOnAdd()
+                .IsRequired()
+                .HasMaxLength(36)
+                .IsUnicode(false)
                 .HasColumnName("id");
             entity.Property(e => e.Address)
                 .IsRequired()
@@ -112,7 +114,9 @@ public partial class SP25_PRN222_NET1710_PRS_G6_HealthCareContext : DbContext
             entity.ToTable("Program_Tracking");
 
             entity.Property(e => e.Id)
-                .ValueGeneratedOnAdd()
+                .IsRequired()
+                .HasMaxLength(36)
+                .IsUnicode(false)
                 .HasColumnName("id");
             entity.Property(e => e.CreatedDate)
                 .HasColumnName("created_date")

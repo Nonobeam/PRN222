@@ -11,7 +11,7 @@ GO
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Program_Tracking' AND xtype='U')
 BEGIN
 CREATE TABLE Program_Tracking (
-    id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    id VARCHAR(36) NOT NULL PRIMARY KEY,
     name VARCHAR(36) NOT NULL,
     start_time BIGINT NOT NULL,
     end_time BIGINT NOT NULL,
@@ -29,7 +29,7 @@ GO
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Appointment_Tracking' AND xtype='U')
 BEGIN
 CREATE TABLE Appointment_Tracking (
-    id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    id VARCHAR(36) NOT NULL PRIMARY KEY,
     name VARCHAR(36) NOT NULL,
     start_time BIGINT NOT NULL,
     end_time BIGINT NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE Appointment_Tracking (
     holder VARCHAR(36) NOT NULL,
     address VARCHAR(36) NOT NULL,
     type VARCHAR(36) NOT NULL,
-    program_tracking_id BIGINT NOT NULL,
+    program_tracking_id VARCHAR(36) NOT NULL,
 
     CONSTRAINT FK_Appointment_Program FOREIGN KEY (program_tracking_id)
     REFERENCES Program_Tracking(id) ON DELETE CASCADE ON UPDATE CASCADE
@@ -242,15 +242,16 @@ INSERT [dbo].[UserAccount] ([UserAccountID], [UserName], [Password], [FullName],
 GO
 SET IDENTITY_INSERT [dbo].[UserAccount] OFF
 GO
-INSERT INTO Program_Tracking (name, start_time, end_time, rating, created_date, updated_date, system_status, type, tags)
+INSERT INTO Program_Tracking (id, name, start_time, end_time, rating, created_date, updated_date, system_status, type, tags)
 VALUES 
-    ('Mental Wellness Program', 1710000000, 1712592000, '4.8', '2025-03-01 10:00:00', NULL, 'ACTIVE', 'Dr. Smith', '001'),
-    ('CBT Therapy', 1712688000, 1715280000, '4.6', '2025-03-05 12:00:00', NULL, 'ACTIVE', 'Dr. Brown', '002'),
-    ('Stress Management', 1715280000, 1717872000, '4.9', '2025-03-10 08:30:00', NULL, 'ACTIVE', 'Dr. Green', '003'),
-    ('Mindfulness Training', 1717872000, 1720464000, '4.7', '2025-03-15 14:00:00', NULL, 'ACTIVE', 'Dr. Adams', '004');
-INSERT INTO Appointment_Tracking (name, start_time, end_time, rating, created_date, updated_date, system_status, holder, address, type, program_tracking_id)
+    ('550e8400-e29b-41d4-a716-446655440001', 'Mental Wellness Program', 1710000000, 1712592000, '4.8', '2025-03-01 10:00:00', NULL, 'ACTIVE', 'Dr. Smith', '001'),
+    ('550e8400-e29b-41d4-a716-446655440002', 'CBT Therapy', 1712688000, 1715280000, '4.6', '2025-03-05 12:00:00', NULL, 'ACTIVE', 'Dr. Brown', '002'),
+    ('550e8400-e29b-41d4-a716-446655440003', 'Stress Management', 1715280000, 1717872000, '4.9', '2025-03-10 08:30:00', NULL, 'ACTIVE', 'Dr. Green', '003'),
+    ('550e8400-e29b-41d4-a716-446655440004', 'Mindfulness Training', 1717872000, 1720464000, '4.7', '2025-03-15 14:00:00', NULL, 'ACTIVE', 'Dr. Adams', '004');
+
+INSERT INTO Appointment_Tracking (id, name, start_time, end_time, rating, created_date, updated_date, system_status, holder, address, type, program_tracking_id)
 VALUES 
-    ('Session 1 - Anxiety Counseling', 1712760000, 1712763600, '4.5', '2025-03-10 09:00:00', NULL, 'ACTIVE', 'Dr. Smith', '123 Main St', 'user-001', '1'),
-    ('Session 2 - Depression Therapy', 1712846400, 1712850000, '4.7', '2025-03-11 11:00:00', NULL, 'ACTIVE', 'Dr. Brown', '456 Oak St', 'user-002', '2'),
-    ('Session 3 - Stress Reduction', 1715376000, 1715379600, '4.8', '2025-03-12 13:30:00', NULL, 'ACTIVE', 'Dr. Green', '789 Pine St', 'user-003', '3'),
-    ('Session 4 - Mindfulness Practice', 1717958400, 1717962000, '4.6', '2025-03-13 16:00:00', NULL, 'ACTIVE', 'Dr. Adams', '101 Elm St', 'user-004', '4');
+    ('660e8400-e29b-41d4-a716-556655440001', 'Session 1 - Anxiety Counseling', 1712760000, 1712763600, '4.5', '2025-03-10 09:00:00', NULL, 'ACTIVE', 'Dr. Smith', '123 Main St', 'user-001', '550e8400-e29b-41d4-a716-446655440001'),
+    ('660e8400-e29b-41d4-a716-556655440002', 'Session 2 - Depression Therapy', 1712846400, 1712850000, '4.7', '2025-03-11 11:00:00', NULL, 'ACTIVE', 'Dr. Brown', '456 Oak St', 'user-002', '550e8400-e29b-41d4-a716-446655440002'),
+    ('660e8400-e29b-41d4-a716-556655440003', 'Session 3 - Stress Reduction', 1715376000, 1715379600, '4.8', '2025-03-12 13:30:00', NULL, 'ACTIVE', 'Dr. Green', '789 Pine St', 'user-003', '550e8400-e29b-41d4-a716-446655440003'),
+    ('660e8400-e29b-41d4-a716-556655440004', 'Session 4 - Mindfulness Practice', 1717958400, 1717962000, '4.6', '2025-03-13 16:00:00', NULL, 'ACTIVE', 'Dr. Adams', '101 Elm St', 'user-004', '550e8400-e29b-41d4-a716-446655440004');

@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PsychologyHealthCare.RazorWebApp
 build_property.RootNamespace = PsychologyHealthCare.RazorWebApp
@@ -28,24 +36,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTracking/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ1xDcmVhdGUuY3NodG1s
+[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTrackings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTracking/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ1xEZWxldGUuY3NodG1s
+[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTrackings/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTracking/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ1xEZXRhaWxzLmNzaHRtbA==
+[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTrackings/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTracking/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ1xFZGl0LmNzaHRtbA==
+[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTrackings/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTracking/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ1xJbmRleC5jc2h0bWw=
+[C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/AppointmentTrackings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRUcmFja2luZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asus/Documents/semester_7/PRN222/SP25_PRN222_NET1710_ASM2_SE183026_PhucNH/PsychologyHealthCare.RazorWebApp/Pages/Error.cshtml]
