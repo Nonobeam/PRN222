@@ -1,74 +1,120 @@
-@model IEnumerable<PsychologyHealthCare.Repository.Models.AppointmentTracking>
+@model PsychologyHealthCare.MVCWebApp.Models.AppointmentViewModel
 
 @{
-    ViewData["Title"] = "Appointments";
+    ViewData["Title"] = "Index";
 }
 
-<h1>Appointments</h1>
+<h1>Index</h1>
 
-<form asp-action="Index">
+<form method="get" asp-action="Index">
     <div class="row">
         <div class="col-md-3">
             <div class="form-group">
                 <label class="control-label">Name</label>
-                <input type="text" name="name" class="form-control" />
+                <input type="text" name="name" value="@ViewData["name"]" class="form-control" />
             </div>
         </div>
         <div class="col-md-3">
             <div class="form-group">
                 <label class="control-label">Rating</label>
-                <input type="text" name="rating" class="form-control" />
+                <input type="text" name="rating" value="@ViewData["rating"]" class="form-control" />
             </div>
         </div>
         <div class="col-md-3">
             <div class="form-group">
                 <label class="control-label">Address</label>
-                <input type="text" name="address" class="form-control" />
+                <input type="text" name="address" value="@ViewData["address"]" class="form-control" />
             </div>
         </div>
         <div class="col-md-3 mt-4">
             <div class="form-group">
                 <input type="submit" value="Search" class="btn btn-success" />
-                <a asp-action="Create" class="btn btn-primary">Create New</a>
             </div>
         </div>
     </div>
 </form>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>@Html.DisplayNameFor(model => model.First().Name)</th>
-            <th>@Html.DisplayNameFor(model => model.First().CreatedDate)</th>
-            <th>@Html.DisplayNameFor(model => model.First().UpdatedDate)</th>
-            <th>@Html.DisplayNameFor(model => model.First().Rating)</th>
-            <th>@Html.DisplayNameFor(model => model.First().Holder)</th>
-            <th>@Html.DisplayNameFor(model => model.First().Address)</th>
-            <th>@Html.DisplayNameFor(model => model.First().SystemStatus)</th>
-            <th>@Html.DisplayNameFor(model => model.First().Type)</th>
-            <th>@Html.DisplayNameFor(model => model.First().ProgramTracking.Name)</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<div>
+    <table class="table">
+        <thead>
             <tr>
-                <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                <td>@Html.DisplayFor(modelItem => item.CreatedDate)</td>
-                <td>@Html.DisplayFor(modelItem => item.UpdatedDate)</td>
-                <td>@Html.DisplayFor(modelItem => item.Rating)</td>
-                <td>@Html.DisplayFor(modelItem => item.Holder)</td>
-                <td>@Html.DisplayFor(modelItem => item.Address)</td>
-                <td>@Html.DisplayFor(modelItem => item.SystemStatus)</td>
-                <th>@Html.DisplayFor(modelItem => item.Type)</th>
-                <td>@Html.DisplayFor(modelItem => item.ProgramTracking.Name)</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
+                <th>@Html.DisplayNameFor(model => model.Appointments.First().Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Appointments.First().CreatedDate)</th>
+                <th>@Html.DisplayNameFor(model => model.Appointments.First().UpdatedDate)</th>
+                <th>@Html.DisplayNameFor(model => model.Appointments.First().Rating)</th>
+                <th>@Html.DisplayNameFor(model => model.Appointments.First().Holder)</th>
+                <th>@Html.DisplayNameFor(model => model.Appointments.First().Address)</th>
+                <th>@Html.DisplayNameFor(model => model.Appointments.First().SystemStatus)</th>
+                <th>@Html.DisplayNameFor(model => model.Appointments.First().Type)</th>
+                <th>@Html.DisplayNameFor(model => model.Appointments.First().ProgramTracking.Name)</th>
+                <th>Actions</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Appointments)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.CreatedDate)</td>
+                    <td>@Html.DisplayFor(modelItem => item.UpdatedDate)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Rating)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Holder)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                    <td>@Html.DisplayFor(modelItem => item.SystemStatus)</td>
+                    <th>@Html.DisplayFor(modelItem => item.Type)</th>
+                    <td>@Html.DisplayFor(modelItem => item.ProgramTracking.Name)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <nav>
+        <ul class="pagination">
+            @if (Model.PageNumber > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       asp-route-pageNumber="@(Model.PageNumber - 1)"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-name="@Model.Name"
+                       asp-route-rating="@Model.Rating"
+                       asp-route-address="@Model.Address">
+                       Previous
+                   </a>
+                </li>
+            }
+
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                    <a class="page-link"
+                       asp-route-pageNumber="@i"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-name="@Model.Name"
+                       asp-route-rating="@Model.Rating"
+                       asp-route-address="@Model.Address">@i</a>
+                </li>
+            }
+
+            @if (Model.PageNumber < Model.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       asp-route-pageNumber="@(Model.PageNumber + 1)"
+                       asp-route-pageSize="@Model.PageSize"
+                       asp-route-name="@Model.Name"
+                       asp-route-rating="@Model.Rating"
+                       asp-route-address="@Model.Address">Next</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

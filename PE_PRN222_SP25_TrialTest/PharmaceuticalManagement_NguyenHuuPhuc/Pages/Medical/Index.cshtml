@@ -44,17 +44,17 @@
     <table class="table">
         <thead>
             <tr>
-                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].MedicineId)</th>
-                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].MedicineName)</th>
-                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].ActiveIngredients)</th>
-                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].ExpirationDate)</th>
-                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].DosageForm)</th>
-                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].WarningsAndPrecautions)</th>
-                <th>@Html.DisplayNameFor(model => model.MedicineInformation[0].Manufacturer.ManufacturerName)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation.First().MedicineId)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation.First().MedicineName)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation.First().ActiveIngredients)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation.First().ExpirationDate)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation.First().DosageForm)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation.First().WarningsAndPrecautions)</th>
+                <th>@Html.DisplayNameFor(model => model.MedicineInformation.First().Manufacturer.ManufacturerName)</th>
                 <th>Actions</th>
             </tr>
         </thead>
-        <tbody id="appointmentList">
+        <tbody>
             @foreach (var item in Model.MedicineInformation)
             {
                 <tr id="@item.MedicineId">

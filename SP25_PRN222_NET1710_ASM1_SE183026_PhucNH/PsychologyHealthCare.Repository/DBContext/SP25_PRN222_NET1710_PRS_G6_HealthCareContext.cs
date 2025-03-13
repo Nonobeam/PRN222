@@ -123,11 +123,11 @@ public partial class SP25_PRN222_NET1710_PRS_G6_HealthCareContext : DbContext
                 .HasColumnType("datetime");
             entity.Property(e => e.StartTime).HasColumnName("start_time");
             entity.Property(e => e.EndTime).HasColumnName("end_time");
-            entity.Property(e => e.Holder)
+            entity.Property(e => e.Tags)
                 .IsRequired()
                 .HasMaxLength(36)
                 .IsUnicode(false)
-                .HasColumnName("holder");
+                .HasColumnName("tags");
             entity.Property(e => e.Name)
                 .IsRequired()
                 .HasMaxLength(36)

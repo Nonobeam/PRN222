@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\PE_PRN222_SP25_TrialTest\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FAF0BBEA-7602-4D2C-96EA-0DFFE8025AB7}|PharmaceuticalManagement_NguyenHuuPhuc\\PharmaceuticalManagement_NguyenHuuPhuc.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\pe_prn222_sp25_trialtest\\pharmaceuticalmanagement_nguyenhuuphuc\\pages\\medical\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FAF0BBEA-7602-4D2C-96EA-0DFFE8025AB7}|PharmaceuticalManagement_NguyenHuuPhuc\\PharmaceuticalManagement_NguyenHuuPhuc.csproj|solutionrelative:pharmaceuticalmanagement_nguyenhuuphuc\\pages\\medical\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAF0BBEA-7602-4D2C-96EA-0DFFE8025AB7}|PharmaceuticalManagement_NguyenHuuPhuc\\PharmaceuticalManagement_NguyenHuuPhuc.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\pe_prn222_sp25_trialtest\\pharmaceuticalmanagement_nguyenhuuphuc\\pages\\medical\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAF0BBEA-7602-4D2C-96EA-0DFFE8025AB7}|PharmaceuticalManagement_NguyenHuuPhuc\\PharmaceuticalManagement_NguyenHuuPhuc.csproj|solutionrelative:pharmaceuticalmanagement_nguyenhuuphuc\\pages\\medical\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,32 +46,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\PE_PRN222_SP25_TrialTest\\PharmaceuticalManagement_NguyenHuuPhuc\\Pages\\Medical\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "PharmaceuticalManagement_NguyenHuuPhuc\\Pages\\Medical\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\PE_PRN222_SP25_TrialTest\\PharmaceuticalManagement_NguyenHuuPhuc\\Pages\\Medical\\Create.cshtml.cs",
-              "RelativeToolTip": "PharmaceuticalManagement_NguyenHuuPhuc\\Pages\\Medical\\Create.cshtml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAADwvywAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T15:53:24.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\PE_PRN222_SP25_TrialTest\\PharmaceuticalManagement_NguyenHuuPhuc\\Pages\\Medical\\Create.cshtml",
-              "RelativeDocumentMoniker": "PharmaceuticalManagement_NguyenHuuPhuc\\Pages\\Medical\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\PE_PRN222_SP25_TrialTest\\PharmaceuticalManagement_NguyenHuuPhuc\\Pages\\Medical\\Create.cshtml",
-              "RelativeToolTip": "PharmaceuticalManagement_NguyenHuuPhuc\\Pages\\Medical\\Create.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-11T15:52:20.047Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -3,8 +3,8 @@ using PsychologyHealthCare.Service;
 using PsychologyHealthCare.Repository.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using PsychologyHealthCare.MVCWebApp.Models;
 
 namespace PsychologyHealthCare.MVCWebApp.Controllers
 {
@@ -12,6 +12,7 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
     {
         private readonly IAppointmentTrackingService _appointmentService;
         private readonly ProgramTrackingService _programService;
+        public readonly int PageSize = 3;
 
         public AppointmentTrackingController(IAppointmentTrackingService appointmentService, ProgramTrackingService programService)
         {
@@ -20,21 +21,47 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> Index(string name, string rating, string address)
+        public async Task<IActionResult> Index(string name, string rating, string address, int pageNumber = 1)
         {
-            IEnumerable<AppointmentTracking> appointments;
+            ViewData["name"] = name;
+            ViewData["rating"] = rating;
+            ViewData["address"] = address;
+
+            var appointments = string.IsNullOrEmpty(name) && string.IsNullOrEmpty(rating) && string.IsNullOrEmpty(address)
+                ? await _appointmentService.GetAllAsync()
+                : await _appointmentService.Search(name, rating, address);
+
+            var appointmentsViewModel = GetPagedAppointments(appointments, pageNumber, PageSize);
 
             if (!string.IsNullOrEmpty(name) || !string.IsNullOrEmpty(rating) || !string.IsNullOrEmpty(address))
             {
-                appointments = await _appointmentService.Search(name, rating, address);
-            }
-            else
-            {
-                appointments = await _appointmentService.GetAllAsync();
+                appointmentsViewModel.Name = name;
+                appointmentsViewModel.Rating = rating;
+                appointmentsViewModel.Address = address;
             }
 
-            return View(appointments);
+            return View(appointmentsViewModel);
         }
+
+        private AppointmentViewModel GetPagedAppointments(IEnumerable<AppointmentTracking> appointments, int pageNumber, int pageSize)
+        {
+            var totalItems = appointments.Count();
+            var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+
+            var pagedAppointments = appointments
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            return new AppointmentViewModel
+            {
+                Appointments = pagedAppointments,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalPages = totalPages
+            };
+        }
+
 
         public async Task<IActionResult> Details(string id)
         {

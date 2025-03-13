@@ -23,7 +23,7 @@ public partial class ProgramTracking
 
     public string SystemStatus { get; set; }
 
-    public string Holder { get; set; }
-
     public string Type { get; set; }
+
+    public string Tags { get; set; }
 }
