@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id}"
 @model PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings.EditModel
 @{
     ViewData["Title"] = "Edit";
@@ -80,15 +80,19 @@
             </div>
 
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" id="saveButton" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-page="./Index">Back to List</a>
 </div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/js/health.js"></script>
 
 @section Scripts {
     @{

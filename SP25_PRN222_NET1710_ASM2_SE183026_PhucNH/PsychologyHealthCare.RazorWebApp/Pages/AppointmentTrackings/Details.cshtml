@@ -6,52 +6,88 @@
 
 <h1>Details</h1>
 
-<div>
-    <h4>Appointment Tracking</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Id)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Id)</dd>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AppointmentTracking.Id" />
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Name)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Name)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.Name" class="control-label"></label>
+                <input asp-for="AppointmentTracking.Name" class="form-control" />
+                <span asp-validation-for="AppointmentTracking.Name" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.StartTime)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.StartTime)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.StartTime" class="control-label"></label>
+                <input asp-for="AppointmentTracking.StartTime" class="form-control" />
+                <span asp-validation-for="AppointmentTracking.StartTime" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.EndTime)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.EndTime)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.EndTime" class="control-label"></label>
+                <input asp-for="AppointmentTracking.EndTime" class="form-control" />
+                <span asp-validation-for="AppointmentTracking.EndTime" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.CreatedDate)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.CreatedDate)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.CreatedDate" class="control-label"></label>
+                <input asp-for="AppointmentTracking.CreatedDate" type="datetime-local" class="form-control" disabled="disabled" />
+                <span asp-validation-for="AppointmentTracking.CreatedDate" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.UpdatedDate)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.UpdatedDate)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.UpdatedDate" class="control-label"></label>
+                <input asp-for="AppointmentTracking.UpdatedDate" type="datetime-local" class="form-control" disabled="disabled" />
+                <span asp-validation-for="AppointmentTracking.UpdatedDate" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Rating)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Rating)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.Rating" class="control-label"></label>
+                <input asp-for="AppointmentTracking.Rating" class="form-control" />
+                <span asp-validation-for="AppointmentTracking.Rating" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Holder)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Holder)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.Holder" class="control-label"></label>
+                <input asp-for="AppointmentTracking.Holder" class="form-control" />
+                <span asp-validation-for="AppointmentTracking.Holder" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Address)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Address)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.Address" class="control-label"></label>
+                <input asp-for="AppointmentTracking.Address" class="form-control" />
+                <span asp-validation-for="AppointmentTracking.Address" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.Type)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.Type)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.Type" class="control-label"></label>
+                <input asp-for="AppointmentTracking.Type" class="form-control" />
+                <span asp-validation-for="AppointmentTracking.Type" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.SystemStatus)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.SystemStatus)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.SystemStatus" class="control-label"></label>
+                <input asp-for="AppointmentTracking.SystemStatus" class="form-control" />
+                <span asp-validation-for="AppointmentTracking.SystemStatus" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.ProgramTrackingId)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.ProgramTrackingId)</dd>
+            <div class="form-group">
+                <label asp-for="AppointmentTracking.ProgramTrackingId" class="control-label"></label>
+                <select asp-for="AppointmentTracking.ProgramTrackingId" class="form-control" asp-items="ViewBag.ProgramId"></select>
+                <span asp-validation-for="AppointmentTracking.ProgramTrackingId" class="text-danger"></span>
+            </div>
 
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.AppointmentTracking.ProgramTracking.Name)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.AppointmentTracking.ProgramTracking.Name)</dd>
-    </dl>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="button" id="saveButton" class="btn btn-danger" value="Save" />
+            </div>
+        </form>
+    </div>
 </div>
 
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.AppointmentTracking.Id" class="btn btn-primary">Edit</a> |
-    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    <a asp-page="./Edit" asp-route-id="@Model?.AppointmentTracking.Id" class="btn btn-primary">Edit</a> |
+    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
 </div>

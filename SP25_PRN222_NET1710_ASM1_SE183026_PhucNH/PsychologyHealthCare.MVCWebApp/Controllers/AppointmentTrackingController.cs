@@ -62,7 +62,6 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
             };
         }
 
-
         public async Task<IActionResult> Details(string id)
         {
             if (id == null) return NotFound();

@@ -25,14 +25,14 @@ namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
                 return NotFound();
             }
 
-            var surveyquest = await _appopinmentService.GetById(id);
-            if (surveyquest == null)
+            var appointment = await _appopinmentService.GetById(id);
+            if (appointment == null)
             {
                 return NotFound();
             }
             else
             {
-                AppointmentTracking = surveyquest;
+                AppointmentTracking = appointment;
             }
             return Page();
         }

@@ -23,9 +23,9 @@ namespace PsychologyHeathCare.RazorWebApp.Hubs
 				var appointment = JsonConvert.DeserializeObject<AppointmentTracking>(json);
 				await _appointmentService.Create(appointment!); // appointment! is not null reference
 
-                appointment!.ProgramTracking = await _programService.GetById(appointment!.Id);
+				appointment!.ProgramTracking = await _programService.GetById(appointment!.ProgramTrackingId);
 
-				await Clients.All.SendAsync("Create_Appointment", appointment);
+                await Clients.All.SendAsync("Create_Appointment", appointment);
 
 				#region Call domain application or api service here
 
@@ -34,13 +34,6 @@ namespace PsychologyHeathCare.RazorWebApp.Hubs
 			catch (Exception)
 			{
 			}
-		}
-
-		public async Task DeleteAppointment(string id)
-		{
-			await Clients.All.SendAsync("Delete_Appointment", id);
-			AppointmentTracking appointment = (await _appointmentService.GetById(id))!;
-			await _appointmentService.Delete(appointment);
 		}
 
 		public async Task UpdateAppointment(string json)
@@ -53,5 +46,12 @@ namespace PsychologyHeathCare.RazorWebApp.Hubs
 
 			await Clients.All.SendAsync("Update_Appointment", appointment);
 		}
-	}
+
+        public async Task DeleteAppointment(string id)
+        {
+            await Clients.All.SendAsync("Delete_Appointment", id);
+            AppointmentTracking appointment = (await _appointmentService.GetById(id))!;
+            await _appointmentService.Delete(appointment);
+        }
+    }
 }
