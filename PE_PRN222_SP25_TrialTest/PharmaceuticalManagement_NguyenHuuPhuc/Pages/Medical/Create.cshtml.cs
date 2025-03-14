@@ -6,7 +6,7 @@ using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Repository.Models;
 using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service;
 using System.Text.RegularExpressions;
 
-namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
+namespace PharmaceuticalManagement_NguyenHuuPhuc.Pages.Medical
 {
     [Authorize(Roles = "2")]
     public class CreateModel : PageModel
@@ -32,6 +32,8 @@ namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
+            var dropList = await _manufacturesService.GetAllAsync();
+            ViewData["ManufacturerName"] = new SelectList(dropList, "ManufacturerId", "ManufacturerName");
             if (!IsValidActiveIngredients(MedicineInformation.ActiveIngredients))
             {
                 ModelState.AddModelError("MedicineInformation.ActiveIngredients",

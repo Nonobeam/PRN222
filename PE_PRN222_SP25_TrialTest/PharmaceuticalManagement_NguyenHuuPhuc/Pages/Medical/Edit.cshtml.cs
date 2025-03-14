@@ -5,16 +5,16 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Repository.Models;
 using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service;
 
-namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
+namespace PharmaceuticalManagement_NguyenHuuPhuc.Pages.Medical
 {
     [Authorize(Roles = "2")]
     public class EditModel : PageModel
     {
         private readonly IMedicineService _medicineService;
         private readonly ManufacturesService _manufacturesService;
-        public EditModel(IMedicineService _edicineService, ManufacturesService manufacturesService)
+        public EditModel(IMedicineService medicineService, ManufacturesService manufacturesService)
         {
-            _medicineService = _edicineService;
+            _medicineService = medicineService;
             _manufacturesService = manufacturesService;
         }
 
@@ -34,7 +34,7 @@ namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
                 return NotFound();
             }
             MedicineInformation = medicine;
-            ViewData["ProgramId"] = new SelectList(await _manufacturesService.GetAllAsync(), "Id", "Name");
+            ViewData["ManufacturerId"] = new SelectList(await _manufacturesService.GetAllAsync(), "ManufacturerId", "ManufacturerName");
             return Page();
         }
 

@@ -1,5 +1,5 @@
 ﻿@page
-@model PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings.EditModel
+@model PharmaceuticalManagement_NguyenHuuPhuc.Pages.Medical.EditModel
 @{
     ViewData["Title"] = "Edit";
 }
@@ -45,14 +45,8 @@
 
             <div class="form-group">
                 <label asp-for="MedicineInformation.ManufacturerId" class="control-label"></label>
-                <input asp-for="MedicineInformation.ManufacturerId" class="form-control" />
+                <select asp-for="MedicineInformation.ManufacturerId" class="form-control" asp-items="ViewBag.ManufacturerId"></select>
                 <span asp-validation-for="MedicineInformation.ManufacturerId" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label asp-for="MedicineInformation.Manufacturer.ManufacturerName" class="control-label"></label>
-                <input asp-for="MedicineInformation.Manufacturer.ManufacturerName" class="form-control" />
-                <span asp-validation-for="MedicineInformation.Manufacturer.ManufacturerName" class="text-danger"></span>
             </div>
 
             <div class="form-group">
@@ -63,8 +57,12 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-page="./Index">Back to List</a>
 </div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/js/health.js"></script>
 
 @section Scripts {
     @{

@@ -1,9 +1,9 @@
 #nullable disable
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using PsychologyHealthCare.RazorWebApp.Models;
+using PharmaceuticalManagement_NguyenHuuPhuc.Models;
 
-namespace PsychologyHeathCare.RazorWebApp.Pages.Account
+namespace PharmaceuticalManagement_NguyenHuuPhuc.Pages.Account
 {
     public class ForbiddenModel : PageModel
     {

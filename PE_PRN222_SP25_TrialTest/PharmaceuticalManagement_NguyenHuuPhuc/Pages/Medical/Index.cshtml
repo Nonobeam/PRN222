@@ -8,22 +8,23 @@
 <h1>Index</h1>
 
 <form method="get">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="row g-3">
         <div class="col-md-3">
             <div class="form-floating">
-                <input asp-for="Active" class="form-control" placeholder="Active Ingredients" />
+                <input asp-for="Active" class="form-control"/>
                 <label asp-for="Active">Active Ingredients</label>
             </div>
         </div>
         <div class="col-md-3">
             <div class="form-floating">
-                <input asp-for="Expire" class="form-control" placeholder="Expiration Date" />
+                <input asp-for="Expire" class="form-control"/>
                 <label asp-for="Expire">Expiration Date</label>
             </div>
         </div>
         <div class="col-md-3">
             <div class="form-floating">
-                <input asp-for="Warn" class="form-control" placeholder="Warnings and Precautions" />
+                <input asp-for="Warn" class="form-control"/>
                 <label asp-for="Warn">Warnings and Precautions</label>
             </div>
         </div>
@@ -51,7 +52,7 @@
                 <th>Actions</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="medicineList">
             @foreach (var item in Model.MedicineInformation)
             {
                 <tr id="@item.MedicineId">
@@ -111,3 +112,6 @@
         </ul>
     </nav>
 </div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/js/health.js"></script>

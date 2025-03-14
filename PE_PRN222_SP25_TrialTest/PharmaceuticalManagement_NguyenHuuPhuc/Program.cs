@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service;
-using PsychologyHeathCare.RazorWebApp.Hubs;
+using PharmaceuticalManagement_NguyenHuuPhuc.Hubs;
 
 namespace PsychologyHeathCare.RazorWebApp
 {

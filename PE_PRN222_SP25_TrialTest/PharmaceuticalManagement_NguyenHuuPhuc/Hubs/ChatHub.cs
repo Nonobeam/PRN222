@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 
-namespace PsychologyHeathCare.RazorWebApp.Hubs
+namespace PharmaceuticalManagement_NguyenHuuPhuc.Hubs
 {
 	public class ChatHub : Hub
 	{

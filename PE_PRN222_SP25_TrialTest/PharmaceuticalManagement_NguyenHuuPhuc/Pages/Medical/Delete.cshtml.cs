@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.SignalR;
 using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Repository.Models;
 using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service;
-using PsychologyHeathCare.RazorWebApp.Hubs;
+using PharmaceuticalManagement_NguyenHuuPhuc.Hubs;
 
-namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
+namespace PharmaceuticalManagement_NguyenHuuPhuc.Pages.Medical
 {
     [Authorize(Roles = "2")]
     public class DeleteModel : PageModel

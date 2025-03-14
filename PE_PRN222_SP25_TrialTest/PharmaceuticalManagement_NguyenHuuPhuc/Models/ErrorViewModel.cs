@@ -1,4 +1,4 @@
-namespace PsychologyHealthCare.RazorWebApp.Models
+namespace PharmaceuticalManagement_NguyenHuuPhuc.Models
 {
 	public class ErrorViewModel
 	{

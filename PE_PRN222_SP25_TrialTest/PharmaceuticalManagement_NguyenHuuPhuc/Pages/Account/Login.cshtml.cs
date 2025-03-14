@@ -4,13 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity.Data;
-using PsychologyHealthCare.RazorWebApp.Models;
 using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service;
 using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Repository.Models;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Security;
+using PharmaceuticalManagement_NguyenHuuPhuc.Models;
 
-namespace PsychologyHeathCare.RazorWebApp.Pages.Account
+namespace PharmaceuticalManagement_NguyenHuuPhuc.Pages.Account
 {
     public class LoginModel : PageModel
     {
@@ -20,7 +18,7 @@ namespace PsychologyHeathCare.RazorWebApp.Pages.Account
         public StoreAccount UserAccount { get; set; }
 
 		[BindProperty]
-		public PsychologyHealthCare.RazorWebApp.Models.LoginRequest LoginRequest { get; set; }
+		public Models.LoginRequest LoginRequest { get; set; }
 
         public LoginModel(StoreAccountService userAccountService)
         {

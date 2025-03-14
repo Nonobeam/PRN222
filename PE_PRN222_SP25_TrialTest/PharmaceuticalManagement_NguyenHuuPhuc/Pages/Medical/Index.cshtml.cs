@@ -35,20 +35,27 @@ namespace PharmaceuticalManagement_NguyenHuuPhuc.Pages.Medical
             _medicineService = medicineService;
         }
 
-        public async Task OnGetAsync(string? active, string? expire, string? warn, int pageNumber = 1)
+        public async Task<IActionResult> OnGetAsync(string? active, string? expire, string? warn, int pageNumber = 1)
         {
+            List<MedicineInformation> totalItems = await _medicineService.GetAllAsync();
+            TotalPages = (int)Math.Ceiling(totalItems.Count / (double)PageSize);
+            MedicineInformation = await _medicineService.GetAllAsync(pageNumber);
+
             if (!string.IsNullOrEmpty(active) || !string.IsNullOrEmpty(expire) || !string.IsNullOrEmpty(warn))
             {
-                var totalItems = await _medicineService.GetTotalCountAsync(active, expire, warn);
-                TotalPages = (int)Math.Ceiling(totalItems / (double)PageSize);
-                MedicineInformation = await _medicineService.Search(active, expire, warn, pageNumber);
+                if (User.IsInRole("3"))
+                {
+                    var totalSearchItems = await _medicineService.GetTotalCountAsync(active, expire, warn);
+                    TotalPages = (int)Math.Ceiling(totalSearchItems / (double)PageSize);
+                    MedicineInformation = await _medicineService.Search(active, expire, warn, pageNumber);
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "You do not have permission to search.");
+                }
             }
-            else
-            {
-                List<MedicineInformation> totalItems = await _medicineService.GetAllAsync();
-                TotalPages = (int)Math.Ceiling(totalItems.Count / (double)PageSize);
-                MedicineInformation = await _medicineService.GetAllAsync(pageNumber);
-            }
+
+            return Page();
         }
     }
 }

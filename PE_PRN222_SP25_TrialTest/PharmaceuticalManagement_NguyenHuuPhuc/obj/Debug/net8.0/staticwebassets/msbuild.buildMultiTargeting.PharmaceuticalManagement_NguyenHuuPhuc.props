@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\PharmaceuticalManagement_NguyenHuuPhuc.props" />
-</Project>
