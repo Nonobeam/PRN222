@@ -1,4 +1,0 @@
-C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\bin\Release\net8.0\win-x64\publish\win-x64\appsettings.Development.json
-C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\bin\Release\net8.0\win-x64\publish\win-x64\appsettings.json
-C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\bin\Release\net8.0\win-x64\publish\win-x64\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH.pdb
-C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\bin\Release\net8.0\win-x64\publish\win-x64\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH.exe
