@@ -1,0 +1,100 @@
+﻿@page "/appointment/edit/{id}"
+@inject NavigationManager Navigation
+@inject IAppointmentTrackingService AppointmentService
+@inject ProgramTrackingService ProgramService
+
+<h3>Edit Appointment</h3>
+
+@if (appointmentTracking != null)
+{
+    <EditForm Model="appointmentTracking" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <input type="hidden" @bind-value="appointmentTracking.Id" />
+
+        <div class="form-group">
+            <label>Name</label>
+            <InputText class="form-control" @bind-Value="appointmentTracking.Name" />
+        </div>
+        
+        <div class="form-group">
+            <label>Start Time</label>
+            <InputText class="form-control" @bind-Value="appointmentTracking.StartTime" />
+        </div>
+
+        <div class="form-group">
+            <label>End Time</label>
+            <InputText class="form-control" @bind-Value="appointmentTracking.EndTime" />
+        </div>
+
+        <div class="form-group">
+            <label>Created Date</label>
+            <InputDate class="form-control" @bind-Value="appointmentTracking.CreatedDate" />
+        </div>
+
+        <div class="form-group">
+            <label>Updated Date</label>
+            <InputDate class="form-control" @bind-Value="appointmentTracking.UpdatedDate" />
+        </div>
+
+        <div class="form-group">
+            <label>Rating</label>
+            <InputText class="form-control" @bind-Value="appointmentTracking.Rating" />
+        </div>
+
+        <div class="form-group">
+            <label>Holder</label>
+            <InputText class="form-control" @bind-Value="appointmentTracking.Holder" />
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <InputText class="form-control" @bind-Value="appointmentTracking.Address" />
+        </div>
+
+        <div class="form-group">
+            <label>Type</label>
+            <InputText class="form-control" @bind-Value="appointmentTracking.Type" />
+        </div>
+
+        <div class="form-group">
+            <label>System Status</label>
+            <InputText class="form-control" @bind-Value="appointmentTracking.SystemStatus" />
+        </div>
+
+        <div class="form-group">
+            <label>Program Tracking</label>
+            <InputSelect class="form-control" @bind-Value="appointmentTracking.ProgramTrackingId">
+                @if (programs != null)
+                {
+                    @foreach (var program in programs)
+                    {
+                        <option value="@program.Id">@program.Name</option>
+                    }
+                }
+            </InputSelect>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary" @onclick="() => Navigation.NavigateTo("/appointment")">Cancel</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter] public string Id { get; set; }
+    private AppointmentTracking appointmentTracking;
+    private List<ProgramTracking> programs;
+
+    protected override async Task OnInitializedAsync()
+    {
+        programs = await ProgramService.GetAllAsync();
+        appointmentTracking = await AppointmentService.GetById(Id);
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        await AppointmentService.Update(appointmentTracking);
+        Navigation.NavigateTo("/appointment");
+    }
+}

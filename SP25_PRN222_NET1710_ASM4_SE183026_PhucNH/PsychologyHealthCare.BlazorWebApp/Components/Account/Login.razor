@@ -1,0 +1,93 @@
+﻿@page "/login"
+
+@using PsychologyHealthCare.BlazorWebApp.Models
+@using PsychologyHealthCare.Service
+
+<h1 class="display-4 text-center">Login</h1>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <EditForm Model="loginRequest" OnValidSubmit="HandleLogin">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <InputText id="username" class="form-control" @bind-Value="loginRequest.UserName" />
+                <ValidationMessage For="() => loginRequest.UserName" class="text-danger" />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <InputText id="password" type="password" class="form-control" @bind-Value="loginRequest.Password" />
+                <ValidationMessage For="() => loginRequest.Password" class="text-danger" />
+            </div>
+
+            <div class="form-group text-danger">
+                @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    <p>@errorMessage</p>
+                }
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </EditForm>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+@code {
+    private LoginRequest loginRequest = new LoginRequest();
+    private string errorMessage = "";
+
+    [Inject] private UserAccountService _userAccountService { get; set; } = default!;
+    [Inject] private NavigationManager Navigation { get; set; } = default!;
+    [Inject] private IHttpContextAccessor HttpContextAccessor { get; set; } = default!;
+
+    private async Task HandleLogin()
+    {
+        errorMessage = "";
+
+        try
+        {
+            var userAccount = await _userAccountService.Authenticate(loginRequest.UserName, loginRequest.Password);
+            if (userAccount != null)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, userAccount.UserName),
+                    new Claim(ClaimTypes.Role, userAccount.RoleId.ToString())
+                };
+
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
+
+                var httpContext = HttpContextAccessor.HttpContext;
+                if (httpContext != null)
+                {
+                    await httpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+                    httpContext.Response.Cookies.Append("UserName", userAccount.FullName, new CookieOptions { HttpOnly = true, Secure = true });
+                    httpContext.Response.Cookies.Append("Role", userAccount.RoleId.ToString(), new CookieOptions { HttpOnly = true, Secure = true });
+
+                    Navigation.NavigateTo("/AppointmentTrackings/Index", forceLoad: true);
+                }
+                else
+                {
+                    errorMessage = "Failed to access HttpContext.";
+                }
+            }
+            else
+            {
+                errorMessage = "Invalid username or password.";
+            }
+        }
+        catch (Exception)
+        {
+            errorMessage = "An error occurred during login.";
+        }
+    }
+}

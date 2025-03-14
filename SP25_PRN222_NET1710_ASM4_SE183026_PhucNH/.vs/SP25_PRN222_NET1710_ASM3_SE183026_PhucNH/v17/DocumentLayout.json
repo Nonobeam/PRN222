@@ -1,0 +1,128 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3ED052A-67D7-4909-9BE5-9338CD3F2D9C}|PsychologyHealthCare.WorkerService\\PsychologyHealthCare.WorkerService.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm3_se183026_phucnh\\psychologyhealthcare.workerservice\\windowsbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3ED052A-67D7-4909-9BE5-9338CD3F2D9C}|PsychologyHealthCare.WorkerService\\PsychologyHealthCare.WorkerService.csproj|solutionrelative:psychologyhealthcare.workerservice\\windowsbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45AD10B3-0272-B7D8-88FB-8FA2A0B3C11B}|PsychologyHealthCare.Repository\\PsychologyHealthCare.Repository.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm3_se183026_phucnh\\psychologyhealthcare.repository\\models\\appointmenttracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45AD10B3-0272-B7D8-88FB-8FA2A0B3C11B}|PsychologyHealthCare.Repository\\PsychologyHealthCare.Repository.csproj|solutionrelative:psychologyhealthcare.repository\\models\\appointmenttracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3ED052A-67D7-4909-9BE5-9338CD3F2D9C}|PsychologyHealthCare.WorkerService\\PsychologyHealthCare.WorkerService.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm3_se183026_phucnh\\psychologyhealthcare.workerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3ED052A-67D7-4909-9BE5-9338CD3F2D9C}|PsychologyHealthCare.WorkerService\\PsychologyHealthCare.WorkerService.csproj|solutionrelative:psychologyhealthcare.workerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3ED052A-67D7-4909-9BE5-9338CD3F2D9C}|PsychologyHealthCare.WorkerService\\PsychologyHealthCare.WorkerService.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm3_se183026_phucnh\\psychologyhealthcare.workerservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D3ED052A-67D7-4909-9BE5-9338CD3F2D9C}|PsychologyHealthCare.WorkerService\\PsychologyHealthCare.WorkerService.csproj|solutionrelative:psychologyhealthcare.workerservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentTracking.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\\PsychologyHealthCare.Repository\\Models\\AppointmentTracking.cs",
+              "RelativeDocumentMoniker": "PsychologyHealthCare.Repository\\Models\\AppointmentTracking.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\\PsychologyHealthCare.Repository\\Models\\AppointmentTracking.cs",
+              "RelativeToolTip": "PsychologyHealthCare.Repository\\Models\\AppointmentTracking.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvyUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T16:19:16.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WindowsBackgroundService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\\PsychologyHealthCare.WorkerService\\WindowsBackgroundService.cs",
+              "RelativeDocumentMoniker": "PsychologyHealthCare.WorkerService\\WindowsBackgroundService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\\PsychologyHealthCare.WorkerService\\WindowsBackgroundService.cs",
+              "RelativeToolTip": "PsychologyHealthCare.WorkerService\\WindowsBackgroundService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T16:18:06.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\\PsychologyHealthCare.WorkerService\\Program.cs",
+              "RelativeDocumentMoniker": "PsychologyHealthCare.WorkerService\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\\PsychologyHealthCare.WorkerService\\Program.cs",
+              "RelativeToolTip": "PsychologyHealthCare.WorkerService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T16:17:10.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\\PsychologyHealthCare.WorkerService\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "PsychologyHealthCare.WorkerService\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM3_SE183026_PhucNH\\PsychologyHealthCare.WorkerService\\appsettings.Development.json",
+              "RelativeToolTip": "PsychologyHealthCare.WorkerService\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T16:17:09.832Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

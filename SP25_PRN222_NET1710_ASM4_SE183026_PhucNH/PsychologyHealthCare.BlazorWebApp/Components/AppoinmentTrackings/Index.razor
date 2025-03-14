@@ -1,0 +1,125 @@
+﻿@page "/AppointmentTrackings/Index"
+@using PsychologyHealthCare.Repository.Models;
+@using PsychologyHealthCare.Service;
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
+@inject IAppointmentTrackingService AppointmentTrackingService
+
+<head>
+    <link href="/datatables.min.css" rel="stylesheet" />
+</head>
+
+<h3>Appointment Trackings</h3>
+<button class="btn btn-success" @onclick="CreateNew">Create New</button>
+
+<div class="row mt-3">
+    <div class="col-md-3">
+        <input type="text" class="form-control" @bind="searchName" placeholder="Search Name" />
+    </div>
+    <div class="col-md-3">
+        <input type="text" class="form-control" @bind="searchRating" placeholder="Search Rating" />
+    </div>
+    <div class="col-md-3">
+        <input type="text" class="form-control" @bind="searchAddress" placeholder="Search Address" />
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-primary" @onclick="SearchAppointments">Search</button>
+    </div>
+</div>
+
+<table class="table" id="indexTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Created Date</th>
+            <th>Updated Date</th>
+            <th>Rating</th>
+            <th>Holder</th>
+            <th>Address</th>
+            <th>Type</th>
+            <th>System Status</th>
+            <th>Program Tracking</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    @if (appointments == null || appointments.Count == 0)
+    {
+        <p>Loading....</p>
+    }
+    else
+    {
+        <tbody>
+            @foreach (var item in appointments)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.StartTime.ToString("dd-MM-yyyy HH:mm:ss")</td>
+                    <td>@item.EndTime.ToString("dd-MM-yyyy HH:mm:ss")</td>
+                    <td>@item.CreatedDate.ToString("dd-MM-yyyy HH:mm:ss")</td>
+                    <td>@item.UpdatedDate?.ToString("dd-MM-yyyy HH:mm:ss")</td>
+                    <td>@item.Rating</td>
+                    <td>@item.Holder</td>
+                    <td>@item.Address</td>
+                    <td>@item.Type</td>
+                    <td>@item.SystemStatus</td>
+                    <td>@item.ProgramTracking?.Name</td>
+                    @* <td> *@
+                    @*     <button class="btn btn-outline-info" @onclick="() => Edit(item.Id)">Edit</button> *@
+                    @*     <button class="btn btn-outline-secondary" @onclick="() => Details(item.Id)">Details</button> *@
+                    @*     <button class="btn btn-outline-danger" @onclick="() => Delete(item.Id)">Delete</button> *@
+                    @* </td> *@
+                </tr>
+            }
+        </tbody>
+    }
+</table>
+
+<script src="/datatables.min.js"></script>
+<script src="/datatables-init.js"></script>
+
+@code {
+    private List<AppointmentTracking> appointments;
+    private string searchName = "";
+    private string searchRating = "";
+    private string searchAddress = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        appointments = (await AppointmentTrackingService.GetAllAsync()).OrderBy(at => at.Id).ToList();
+    }
+
+    private async Task SearchAppointments()
+    {
+        appointments = await AppointmentTrackingService.Search(searchName, searchRating, searchAddress);
+    }
+
+    private void CreateNew()
+    {
+        Navigation.NavigateTo("/AppointmentTrackings/Create");
+    }
+
+    private void Edit(int id)
+    {
+        Navigation.NavigateTo($"/AppointmentTrackings/Edit/{id}");
+    }
+
+    private void Details(int id)
+    {
+        Navigation.NavigateTo($"/AppointmentTrackings/Details/{id}");
+    }
+
+    private void Delete(int id)
+    {
+        Navigation.NavigateTo($"/AppointmentTrackings/Delete/{id}");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initializeDataTable");
+        }
+    }
+}
