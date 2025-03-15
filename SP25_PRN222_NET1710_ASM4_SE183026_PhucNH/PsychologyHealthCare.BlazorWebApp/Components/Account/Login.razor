@@ -1,14 +1,20 @@
 ﻿@page "/login"
 
+@using Microsoft.AspNetCore.Authentication;
+@using Microsoft.AspNetCore.Authentication.Cookies
 @using PsychologyHealthCare.BlazorWebApp.Models
 @using PsychologyHealthCare.Service
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Http
+@inject UserAccountService _userAccountService
+@inject NavigationManager navigation
 
 <h1 class="display-4 text-center">Login</h1>
 
 <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-        <EditForm Model="loginRequest" OnValidSubmit="HandleLogin">
+        <EditForm Model="loginRequest" OnValidSubmit="HandleLogin" FormName="loginForm">
             <DataAnnotationsValidator />
             <ValidationSummary class="text-danger" />
 
@@ -25,10 +31,7 @@
             </div>
 
             <div class="form-group text-danger">
-                @if (!string.IsNullOrEmpty(errorMessage))
-                {
-                    <p>@errorMessage</p>
-                }
+                <p>@errorMessage</p>
             </div>
 
             <div class="form-group">
@@ -40,12 +43,13 @@
 </div>
 
 @code {
-    private LoginRequest loginRequest = new LoginRequest();
-    private string errorMessage = "";
+    [CascadingParameter]
+    public HttpContext? httpContext { get; set; }
 
-    [Inject] private UserAccountService _userAccountService { get; set; } = default!;
-    [Inject] private NavigationManager Navigation { get; set; } = default!;
-    [Inject] private IHttpContextAccessor HttpContextAccessor { get; set; } = default!;
+    [SupplyParameterFromForm]
+    private LoginRequest loginRequest { get; set; } = new();
+
+    private string errorMessage = "";
 
     private async Task HandleLogin()
     {
@@ -64,29 +68,20 @@
 
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 var principal = new ClaimsPrincipal(identity);
+                await httpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-                var httpContext = HttpContextAccessor.HttpContext;
-                if (httpContext != null)
-                {
-                    await httpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+                await Task.Delay(1000);
 
-                    httpContext.Response.Cookies.Append("UserName", userAccount.FullName, new CookieOptions { HttpOnly = true, Secure = true });
-                    httpContext.Response.Cookies.Append("Role", userAccount.RoleId.ToString(), new CookieOptions { HttpOnly = true, Secure = true });
-
-                    Navigation.NavigateTo("/AppointmentTrackings/Index", forceLoad: true);
-                }
-                else
-                {
-                    errorMessage = "Failed to access HttpContext.";
-                }
+                navigation.NavigateTo("/AppointmentTrackings/Index");
             }
             else
             {
                 errorMessage = "Invalid username or password.";
             }
         }
-        catch (Exception)
+        catch (Exception e)
         {
+            Console.WriteLine("An error occurred during login. " + e);
             errorMessage = "An error occurred during login.";
         }
     }

@@ -1,0 +1,7 @@
+wwwroot\app.css
+wwwroot\bootstrap\bootstrap.min.css
+wwwroot\bootstrap\bootstrap.min.css.map
+wwwroot\datatables.min.css
+wwwroot\datatables.min.js
+wwwroot\datatables-init.js
+wwwroot\favicon.png

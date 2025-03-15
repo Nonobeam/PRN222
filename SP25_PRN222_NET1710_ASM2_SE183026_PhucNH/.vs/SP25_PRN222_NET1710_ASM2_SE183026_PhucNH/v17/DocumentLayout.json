@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -13,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,16 +47,8 @@
       "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\pages\\appointmenttrackings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|solutionrelative:psychologyhealthcare.razorwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28ADF689-5F13-4DDE-BCCC-7400BD70B6F5}|PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj|c:\\users\\asus\\documents\\semester_7\\prn222\\sp25_prn222_net1710_asm2_se183026_phucnh\\psychologyhealthcare.razorwebapp\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -155,32 +159,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABkAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-14T17:18:50.345Z",
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml.cs",
+              "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T07:48:24.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-14T17:18:49.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Create.cshtml.cs",
@@ -188,25 +179,23 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Create.cshtml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T17:17:42.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T17:17:42.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Login.cshtml.cs",
               "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Login.cshtml.cs",
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCkAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T16:58:35.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T16:58:35.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Login.cshtml",
@@ -214,25 +203,73 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Login.cshtml",
               "ViewState": "AgIAABQAAAAAAAAAAAAwwCUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-14T16:42:31.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T16:42:31.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Edit.cshtml",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Edit.cshtml",
               "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Edit.cshtml",
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Edit.cshtml",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAwwGUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-13T15:33:14.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Program.cs",
+              "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwCkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T16:26:36.813Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T17:18:49.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml",
+              "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml",
+              "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAwIIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-13T15:33:53.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABkAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T17:18:50.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Details.cshtml",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Details.cshtml",
@@ -240,12 +277,11 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Details.cshtml",
               "ViewState": "AgIAAD4AAAAAAAAAAAAwwEYAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T15:17:07.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T15:17:07.111Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Create.cshtml",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Create.cshtml",
@@ -253,12 +289,11 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Create.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAwwGoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T15:32:35.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T15:32:35.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Edit.cshtml.cs",
@@ -266,12 +301,11 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Edit.cshtml.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAAwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T15:58:33.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T15:58:33.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Models\\LoginRequest.cs",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Models\\LoginRequest.cs",
@@ -279,12 +313,11 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Models\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T16:42:29.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T16:42:29.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Forbidden.cshtml",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Forbidden.cshtml",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Forbidden.cshtml",
@@ -292,12 +325,11 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\Account\\Forbidden.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-14T16:41:26.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T16:41:26.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\appsettings.json",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\appsettings.json",
@@ -305,12 +337,11 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-14T16:09:31.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T16:09:31.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "health.js",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\wwwroot\\js\\health.js",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\wwwroot\\js\\health.js",
@@ -322,20 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml",
-              "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml",
-              "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Index.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAwwIIAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T15:33:53.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "libman.json",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\libman.json",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\libman.json",
@@ -343,12 +361,11 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\libman.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-13T16:26:11.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T16:26:11.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Hubs\\ChatHub.cs",
@@ -356,12 +373,11 @@
               "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Hubs\\ChatHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T15:43:16.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T15:43:16.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\wwwroot\\js\\site.js",
@@ -373,20 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Program.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Program.cs",
-              "RelativeToolTip": "PsychologyHealthCare.RazorWebApp\\Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T16:26:36.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\appsettings.Development.json",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\appsettings.Development.json",
@@ -398,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "PsychologyHealthCareHub.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Hubs\\PsychologyHealthCareHub.cs",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Hubs\\PsychologyHealthCareHub.cs",
@@ -410,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Delete.cshtml.cs",
@@ -422,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Properties\\launchSettings.json",
@@ -434,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "PsychologyHealthCare.RazorWebApp",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\PsychologyHealthCare.RazorWebApp.csproj",
@@ -445,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Delete.cshtml",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\AppointmentTrackings\\Delete.cshtml",
@@ -457,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\\PsychologyHealthCare.RazorWebApp\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "PsychologyHealthCare.RazorWebApp\\Pages\\Index.cshtml",

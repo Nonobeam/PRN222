@@ -31,3 +31,17 @@ C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM2_SE183026_Phuc
 C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.pdb
 C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.genruntimeconfig.cache
 C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM2_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\ref\PsychologyHealthCare.Repository.dll
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\bin\Debug\net8.0\PsychologyHealthCare.Repository.deps.json
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\bin\Debug\net8.0\PsychologyHealthCare.Repository.runtimeconfig.json
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\bin\Debug\net8.0\PsychologyHealthCare.Repository.dll
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\bin\Debug\net8.0\PsychologyHealthCare.Repository.pdb
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.csproj.AssemblyReference.cache
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.AssemblyInfo.cs
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.dll
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\refint\PsychologyHealthCare.Repository.dll
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.pdb
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\PsychologyHealthCare.Repository.genruntimeconfig.cache
+C:\Users\Asus\Documents\semester_7\PRN222\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\PsychologyHealthCare.Repository\obj\Debug\net8.0\ref\PsychologyHealthCare.Repository.dll

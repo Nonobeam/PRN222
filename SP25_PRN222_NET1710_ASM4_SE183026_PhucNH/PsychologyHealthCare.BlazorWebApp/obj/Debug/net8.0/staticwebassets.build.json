@@ -1,0 +1,1155 @@
+{
+  "Version": 1,
+  "Hash": "mh+eBgD+FYvBzivqYWXV4RYvam3bh56zE8I+t0m3+YU=",
+  "Source": "PsychologyHealthCare.BlazorWebApp",
+  "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PsychologyHealthCare.BlazorWebApp\\wwwroot",
+      "Source": "PsychologyHealthCare.BlazorWebApp",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hmu6kx9mgf",
+      "Integrity": "d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tspksaymx7",
+      "Integrity": "Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PsychologyHealthCare.BlazorWebApp.styles.css",
+      "SourceId": "PsychologyHealthCare.BlazorWebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "RelativePath": "PsychologyHealthCare.BlazorWebApp#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "v8bf587y1j",
+      "Integrity": "UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PsychologyHealthCare.BlazorWebApp.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PsychologyHealthCare.BlazorWebApp.bundle.scp.css",
+      "SourceId": "PsychologyHealthCare.BlazorWebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "RelativePath": "PsychologyHealthCare.BlazorWebApp#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "v8bf587y1j",
+      "Integrity": "UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PsychologyHealthCare.BlazorWebApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\app.css",
+      "SourceId": "PsychologyHealthCare.BlazorWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "da95v2qkru",
+      "Integrity": "u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "SourceId": "PsychologyHealthCare.BlazorWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpk8xqwxhs",
+      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "PsychologyHealthCare.BlazorWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\datatables.min.css",
+      "SourceId": "PsychologyHealthCare.BlazorWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "RelativePath": "datatables.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0g67zectfi",
+      "Integrity": "YBcEqWZ40DoqU6RiMj5B6NHra12eqSJ2lb4XodmXsn8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\datatables.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\datatables.min.js",
+      "SourceId": "PsychologyHealthCare.BlazorWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "RelativePath": "datatables.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4zf6nmcjoh",
+      "Integrity": "YKU7QKXXLr1kbVQjjDE4925m8BSTxhm+tOGBQCpMPaw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\datatables.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\datatables-init.js",
+      "SourceId": "PsychologyHealthCare.BlazorWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "RelativePath": "datatables-init#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "re4utl8r7a",
+      "Integrity": "LZ0L/2IBKeGSvF2jXxGucJc06y7Gu+8yrGTJ1AjmKEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\datatables-init.js"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\favicon.png",
+      "SourceId": "PsychologyHealthCare.BlazorWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\",
+      "BasePath": "_content/PsychologyHealthCare.BlazorWebApp",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.hmu6kx9mgf.css",
+      "AssetFile": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hmu6kx9mgf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.tspksaymx7.js",
+      "AssetFile": "C:\\Users\\Asus\\.nuget\\packages\\mudblazor\\8.3.0\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tspksaymx7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 16:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "app.da95v2qkru.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 16:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "da95v2qkru"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 16:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 16:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 16:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 16:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "datatables.min.0g67zectfi.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\datatables.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YBcEqWZ40DoqU6RiMj5B6NHra12eqSJ2lb4XodmXsn8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 16:03:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0g67zectfi"
+        },
+        {
+          "Name": "label",
+          "Value": "datatables.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YBcEqWZ40DoqU6RiMj5B6NHra12eqSJ2lb4XodmXsn8="
+        }
+      ]
+    },
+    {
+      "Route": "datatables.min.4zf6nmcjoh.js",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\datatables.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184136"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YKU7QKXXLr1kbVQjjDE4925m8BSTxhm+tOGBQCpMPaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 16:03:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4zf6nmcjoh"
+        },
+        {
+          "Name": "label",
+          "Value": "datatables.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YKU7QKXXLr1kbVQjjDE4925m8BSTxhm+tOGBQCpMPaw="
+        }
+      ]
+    },
+    {
+      "Route": "datatables.min.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\datatables.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YBcEqWZ40DoqU6RiMj5B6NHra12eqSJ2lb4XodmXsn8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 16:03:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YBcEqWZ40DoqU6RiMj5B6NHra12eqSJ2lb4XodmXsn8="
+        }
+      ]
+    },
+    {
+      "Route": "datatables.min.js",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\datatables.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184136"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YKU7QKXXLr1kbVQjjDE4925m8BSTxhm+tOGBQCpMPaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 16:03:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YKU7QKXXLr1kbVQjjDE4925m8BSTxhm+tOGBQCpMPaw="
+        }
+      ]
+    },
+    {
+      "Route": "datatables-init.js",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\datatables-init.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LZ0L/2IBKeGSvF2jXxGucJc06y7Gu+8yrGTJ1AjmKEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 18:15:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LZ0L/2IBKeGSvF2jXxGucJc06y7Gu+8yrGTJ1AjmKEY="
+        }
+      ]
+    },
+    {
+      "Route": "datatables-init.re4utl8r7a.js",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\datatables-init.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LZ0L/2IBKeGSvF2jXxGucJc06y7Gu+8yrGTJ1AjmKEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 18:15:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "re4utl8r7a"
+        },
+        {
+          "Name": "label",
+          "Value": "datatables-init.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LZ0L/2IBKeGSvF2jXxGucJc06y7Gu+8yrGTJ1AjmKEY="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 16:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 16:29:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "PsychologyHealthCare.BlazorWebApp.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PsychologyHealthCare.BlazorWebApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 06:30:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A="
+        }
+      ]
+    },
+    {
+      "Route": "PsychologyHealthCare.BlazorWebApp.styles.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PsychologyHealthCare.BlazorWebApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 06:30:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A="
+        }
+      ]
+    },
+    {
+      "Route": "PsychologyHealthCare.BlazorWebApp.v8bf587y1j.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PsychologyHealthCare.BlazorWebApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 06:30:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v8bf587y1j"
+        },
+        {
+          "Name": "label",
+          "Value": "PsychologyHealthCare.BlazorWebApp.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A="
+        }
+      ]
+    },
+    {
+      "Route": "PsychologyHealthCare.BlazorWebApp.v8bf587y1j.styles.css",
+      "AssetFile": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PsychologyHealthCare.BlazorWebApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 06:30:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v8bf587y1j"
+        },
+        {
+          "Name": "label",
+          "Value": "PsychologyHealthCare.BlazorWebApp.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UeRk10Ek5KPYbcqmRHInQWw9NOk3OVl9Bd0rMcVB45A="
+        }
+      ]
+    }
+  ]
+}

@@ -16,6 +16,25 @@ namespace PsychologyHealthCare.BlazorWebApp
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
 
+            builder.Services.AddHttpContextAccessor();
+
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.Cookie.Name = "auth_token";
+                    options.LoginPath = "/login";
+                    options.LogoutPath = "/logout";
+                    options.AccessDeniedPath = "/access-denied";
+                    options.Cookie.MaxAge = TimeSpan.FromDays(30);
+                });
+
+            builder.Services.AddAuthorization();
+            builder.Services.AddCascadingAuthenticationState();
+
+            builder.Services.AddScoped<UserAccountService>();
+            builder.Services.AddScoped<IAppointmentTrackingService, AppointmentTrackingService>();
+            builder.Services.AddScoped<ProgramTrackingService>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

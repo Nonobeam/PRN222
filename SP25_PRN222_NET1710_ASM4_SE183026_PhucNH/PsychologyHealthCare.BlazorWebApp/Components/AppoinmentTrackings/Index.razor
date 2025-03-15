@@ -1,15 +1,15 @@
 ﻿@page "/AppointmentTrackings/Index"
+
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
 @using PsychologyHealthCare.Repository.Models;
 @using PsychologyHealthCare.Service;
 @inject IJSRuntime JS
 @inject NavigationManager Navigation
 @inject IAppointmentTrackingService AppointmentTrackingService
-
-<head>
-    <link href="/datatables.min.css" rel="stylesheet" />
-</head>
+@rendermode InteractiveServer
 
 <h3>Appointment Trackings</h3>
+
 <button class="btn btn-success" @onclick="CreateNew">Create New</button>
 
 <div class="row mt-3">
@@ -23,7 +23,7 @@
         <input type="text" class="form-control" @bind="searchAddress" placeholder="Search Address" />
     </div>
     <div class="col-md-3">
-        <button class="btn btn-primary" @onclick="SearchAppointments">Search</button>
+        <button class="btn btn-primary" @onclick="@SearchAppointments">Search</button>
     </div>
 </div>
 
@@ -65,34 +65,87 @@
                     <td>@item.Type</td>
                     <td>@item.SystemStatus</td>
                     <td>@item.ProgramTracking?.Name</td>
-                    @* <td> *@
-                    @*     <button class="btn btn-outline-info" @onclick="() => Edit(item.Id)">Edit</button> *@
-                    @*     <button class="btn btn-outline-secondary" @onclick="() => Details(item.Id)">Details</button> *@
-                    @*     <button class="btn btn-outline-danger" @onclick="() => Delete(item.Id)">Delete</button> *@
-                    @* </td> *@
+                    <td>
+                        <button class="btn btn-outline-info" @onclick="@(() => Edit(item.Id))">Edit</button>
+                        <button class="btn btn-outline-secondary" @onclick="() => Details(item.Id)">Details</button>
+                        <button class="btn btn-outline-danger" @onclick="() => Delete(item.Id)">Delete</button>
+                    </td>
                 </tr>
             }
         </tbody>
     }
 </table>
 
-<script src="/datatables.min.js"></script>
-<script src="/datatables-init.js"></script>
+<nav>
+    <ul class="pagination">
+        @if (PageNumber > 1)
+        {
+            <li class="page-item">
+                <button class="page-link" @onclick="PreviousPage">Previous</button>
+            </li>
+        }
+
+        @for (int i = 1; i <= TotalPages; i++)
+        {
+            <li class="page-item @(i == PageNumber ? "active" : "")">
+                <button class="page-link" @onclick="() => LoadPage(i)">@i</button>
+            </li>
+        }
+
+        @if (PageNumber < TotalPages)
+        {
+            <li class="page-item">
+                <button class="page-link" @onclick="NextPage">Next</button>
+            </li>
+        }
+    </ul>
+</nav>
 
 @code {
     private List<AppointmentTracking> appointments;
     private string searchName = "";
     private string searchRating = "";
     private string searchAddress = "";
+    private int PageNumber = 1;
+    private readonly int PageSize = 3;
+    private int TotalPages;
 
     protected override async Task OnInitializedAsync()
     {
-        appointments = (await AppointmentTrackingService.GetAllAsync()).OrderBy(at => at.Id).ToList();
+        await LoadPage(PageNumber);
+    }
+
+    private async Task LoadPage(int pageNumber)
+    {
+        var allAppointments = await AppointmentTrackingService.GetAllAsync();
+        var totalItems = allAppointments.Count;
+        TotalPages = (int)Math.Ceiling(totalItems / (double)PageSize);
+
+        appointments = allAppointments.Skip((pageNumber - 1) * PageSize).Take(PageSize).ToList();
+        PageNumber = pageNumber;
+    }
+
+    private async Task PreviousPage()
+    {
+        if (PageNumber > 1)
+        {
+            await LoadPage(PageNumber - 1);
+        }
+    }
+
+    private async Task NextPage()
+    {
+        if (PageNumber < TotalPages)
+        {
+            await LoadPage(PageNumber + 1);
+        }
     }
 
     private async Task SearchAppointments()
     {
-        appointments = await AppointmentTrackingService.Search(searchName, searchRating, searchAddress);
+        var allAppointments = await AppointmentTrackingService.Search(searchName, searchRating, searchAddress);
+        TotalPages = (int)Math.Ceiling(allAppointments.Count / (double)PageSize);
+        appointments = allAppointments.Skip((PageNumber - 1) * PageSize).Take(PageSize).ToList();
     }
 
     private void CreateNew()
@@ -100,26 +153,18 @@
         Navigation.NavigateTo("/AppointmentTrackings/Create");
     }
 
-    private void Edit(int id)
+    private void Edit(string id)
     {
-        Navigation.NavigateTo($"/AppointmentTrackings/Edit/{id}");
+        Navigation.NavigateTo($"/AppointmentTrackings/Edits/{id}");
     }
 
-    private void Details(int id)
+    private void Details(string id)
     {
         Navigation.NavigateTo($"/AppointmentTrackings/Details/{id}");
     }
 
-    private void Delete(int id)
+    private void Delete(string id)
     {
         Navigation.NavigateTo($"/AppointmentTrackings/Delete/{id}");
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JS.InvokeVoidAsync("initializeDataTable");
-        }
     }
 }
