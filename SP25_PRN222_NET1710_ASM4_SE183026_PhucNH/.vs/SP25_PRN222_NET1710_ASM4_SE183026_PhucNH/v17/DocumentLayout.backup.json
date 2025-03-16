@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "PsychologyHealthCare.BlazorWebApp\\Components\\Account\\Login.razor",
               "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\Components\\Account\\Login.razor",
               "RelativeToolTip": "PsychologyHealthCare.BlazorWebApp\\Components\\Account\\Login.razor",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEoAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAE0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-15T09:28:29.47Z",
               "EditorCaption": ""
@@ -89,7 +89,7 @@
               "RelativeDocumentMoniker": "PsychologyHealthCare.BlazorWebApp\\Program.cs",
               "ToolTip": "C:\\Users\\Asus\\Documents\\semester_7\\PRN222\\SP25_PRN222_NET1710_ASM4_SE183026_PhucNH\\PsychologyHealthCare.BlazorWebApp\\Program.cs",
               "RelativeToolTip": "PsychologyHealthCare.BlazorWebApp\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T08:06:29.251Z",
               "EditorCaption": ""
@@ -104,8 +104,7 @@
               "RelativeToolTip": "PsychologyHealthCare.BlazorWebApp\\Components\\AppoinmentTrackings\\Index.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T07:35:04.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T07:35:04.699Z"
             },
             {
               "$type": "Document",

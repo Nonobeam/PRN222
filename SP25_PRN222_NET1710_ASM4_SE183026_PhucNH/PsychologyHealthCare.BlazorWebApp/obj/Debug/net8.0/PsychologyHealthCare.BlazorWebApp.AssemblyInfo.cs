@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PsychologyHealthCare.BlazorWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a146b512233f162c4b1c98cdc004af1b001780d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cae3223659bb7901488c854bbe8cfc3abe2c4251")]
 [assembly: System.Reflection.AssemblyProductAttribute("PsychologyHealthCare.BlazorWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PsychologyHealthCare.BlazorWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

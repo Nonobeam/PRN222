@@ -55,34 +55,26 @@
     {
         errorMessage = "";
 
-        try
+        var userAccount = await _userAccountService.Authenticate(loginRequest.UserName, loginRequest.Password);
+        if (userAccount != null)
         {
-            var userAccount = await _userAccountService.Authenticate(loginRequest.UserName, loginRequest.Password);
-            if (userAccount != null)
-            {
-                var claims = new List<Claim>
+            var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, userAccount.UserName),
                     new Claim(ClaimTypes.Role, userAccount.RoleId.ToString())
                 };
 
-                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                var principal = new ClaimsPrincipal(identity);
-                await httpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var principal = new ClaimsPrincipal(identity);
+            await httpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-                await Task.Delay(1000);
+            await Task.Delay(1000);
 
-                navigation.NavigateTo("/AppointmentTrackings/Index");
-            }
-            else
-            {
-                errorMessage = "Invalid username or password.";
-            }
+            navigation.NavigateTo("/AppointmentTrackings/Index");
         }
-        catch (Exception e)
+        else
         {
-            Console.WriteLine("An error occurred during login. " + e);
-            errorMessage = "An error occurred during login.";
+            errorMessage = "Invalid username or password.";
         }
     }
 }
