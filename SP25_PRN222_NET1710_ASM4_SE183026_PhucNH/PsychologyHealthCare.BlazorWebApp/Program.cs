@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Components.Server;
+using MudBlazor.Services;
 using PsychologyHealthCare.BlazorWebApp.Components;
 using PsychologyHealthCare.Service;
 
@@ -17,6 +18,7 @@ namespace PsychologyHealthCare.BlazorWebApp
                 .AddInteractiveServerComponents();
 
             builder.Services.AddHttpContextAccessor();
+            //builder.Services.AddMudServices();
 
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>

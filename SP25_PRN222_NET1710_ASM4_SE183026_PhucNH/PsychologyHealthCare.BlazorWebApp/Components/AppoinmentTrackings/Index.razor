@@ -55,8 +55,8 @@
             {
                 <tr>
                     <td>@item.Name</td>
-                    <td>@item.StartTime.ToString("dd-MM-yyyy HH:mm:ss")</td>
-                    <td>@item.EndTime.ToString("dd-MM-yyyy HH:mm:ss")</td>
+                    <td>@item.StartTime</td>
+                    <td>@item.EndTime</td>
                     <td>@item.CreatedDate.ToString("dd-MM-yyyy HH:mm:ss")</td>
                     <td>@item.UpdatedDate?.ToString("dd-MM-yyyy HH:mm:ss")</td>
                     <td>@item.Rating</td>
@@ -87,8 +87,9 @@
 
         @for (int i = 1; i <= TotalPages; i++)
         {
-            <li class="page-item @(i == PageNumber ? "active" : "")">
-                <button class="page-link" @onclick="() => LoadPage(i)">@i</button>
+            var currentPage = i;
+            <li class="page-item @(currentPage == PageNumber ? "active" : "")">
+                <button class="page-link" @onclick="() => LoadPage(currentPage)">@currentPage</button>
             </li>
         }
 
@@ -117,12 +118,20 @@
 
     private async Task LoadPage(int pageNumber)
     {
-        var allAppointments = await AppointmentTrackingService.GetAllAsync();
-        var totalItems = allAppointments.Count;
-        TotalPages = (int)Math.Ceiling(totalItems / (double)PageSize);
-
-        appointments = allAppointments.Skip((pageNumber - 1) * PageSize).Take(PageSize).ToList();
         PageNumber = pageNumber;
+        if (searchName != "")
+        {
+            await SearchAppointments();
+        } 
+        else
+        {
+            var allAppointments = await AppointmentTrackingService.GetAllAsync();
+            var totalItems = allAppointments.Count;
+            TotalPages = (int)Math.Ceiling(totalItems / (double)PageSize);
+
+            appointments = allAppointments.Skip((pageNumber - 1) * PageSize).Take(PageSize).ToList();
+            PageNumber = pageNumber;
+        }
     }
 
     private async Task PreviousPage()

@@ -1,103 +1,110 @@
-﻿@* @page "/AppointmentTrackings/Create" *@
+﻿@page "/AppointmentTrackings/Create"
 
-@* @inject NavigationManager Navigation *@
-@* @inject IAppointmentTrackingService AppointmentService *@
-@* @inject ProgramTrackingService ProgramService *@
+@using PsychologyHealthCare.Repository.Models
+@using PsychologyHealthCare.Service
+@inject NavigationManager Navigation
+@inject IAppointmentTrackingService AppointmentService
+@inject ProgramTrackingService ProgramService
 
-@* <h3>Create Appointment Tracking</h3> *@
+<h3>Create Appointment Tracking</h3>
 
-@* @if (appointmentTracking == null || programList == null) *@
-@* { *@
-@*     <p>Loading...</p> *@
-@* } *@
-@* else *@
-@* { *@
-@*     <EditForm Model="appointmentTracking" OnValidSubmit="CreateAppointmentTracking"> *@
-@*         <DataAnnotationsValidator /> *@
-@*         <ValidationSummary /> *@
+<EditForm Model="AppointmentTracking" OnValidSubmit="CreateAppointmentTracking" FormName="createAppointmentForm">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
 
-@*         <div class="form-group"> *@
-@*             <label>Id</label> *@
-@*             <InputText class="form-control" @bind-Value="appointmentTracking.Id" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Id</label>
+        <InputText class="form-control" @bind-Value="AppointmentTracking.Id" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>Name</label> *@
-@*             <InputText class="form-control" @bind-Value="appointmentTracking.Name" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Name</label>
+        <InputText class="form-control" @bind-Value="AppointmentTracking.Name" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>Start Time</label> *@
-@*             <InputNumber class="form-control" @bind-Value="appointmentTracking.StartTime" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Start Time</label>
+        <InputNumber TValue="long" class="form-control" @bind-Value="AppointmentTracking.StartTime" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>End Time</label> *@
-@*             <InputNumber class="form-control" @bind-Value="appointmentTracking.EndTime" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>End Time</label>
+        <InputNumber TValue="long" class="form-control" @bind-Value="AppointmentTracking.EndTime" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>Created Date</label> *@
-@*             <InputDate class="form-control" @bind-Value="appointmentTracking.CreatedDate" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Created Date</label>
+        <InputDate class="form-control" @bind-Value="AppointmentTracking.CreatedDate" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>Updated Date</label> *@
-@*             <InputDate class="form-control" @bind-Value="appointmentTracking.UpdatedDate" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Updated Date</label>
+        <InputDate class="form-control" @bind-Value="AppointmentTracking.UpdatedDate" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>Rating</label> *@
-@*             <InputText class="form-control" @bind-Value="appointmentTracking.Rating" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Rating</label>
+        <InputText class="form-control" @bind-Value="AppointmentTracking.Rating" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>Holder</label> *@
-@*             <InputText class="form-control" @bind-Value="appointmentTracking.Holder" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Holder</label>
+        <InputText class="form-control" @bind-Value="AppointmentTracking.Holder" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>Address</label> *@
-@*             <InputText class="form-control" @bind-Value="appointmentTracking.Address" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Address</label>
+        <InputText class="form-control" @bind-Value="AppointmentTracking.Address" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>Type</label> *@
-@*             <InputText class="form-control" @bind-Value="appointmentTracking.Type" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Type</label>
+        <InputText class="form-control" @bind-Value="AppointmentTracking.Type" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>System Status</label> *@
-@*             <InputText class="form-control" @bind-Value="appointmentTracking.SystemStatus" /> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>System Status</label>
+        <InputText class="form-control" @bind-Value="AppointmentTracking.SystemStatus" />
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <label>Program Tracking</label> *@
-@*             <select class="form-control" @bind="appointmentTracking.ProgramTrackingId"> *@
-@*                 @foreach (var program in programList) *@
-@*                 { *@
-@*                     <option value="@program.Id">@program.Name</option> *@
-@*                 } *@
-@*             </select> *@
-@*         </div> *@
+    <div class="form-group">
+        <label>Program Tracking</label>
+        <InputSelect class="form-control" @bind-Value="AppointmentTracking.ProgramTrackingId">
+            <option value="">-- Select Program --</option>
+            @foreach (var program in programList!)
+            {
+                <option value="@program.Id">@program.Name</option>
+            }
+        </InputSelect >
+    </div>
 
-@*         <div class="form-group"> *@
-@*             <button type="submit" class="btn btn-primary">Create</button> *@
-@*         </div> *@
-@*     </EditForm> *@
 
-@*     <button class="btn btn-secondary" @onclick="() => Navigation.NavigateTo("/AppointmentTracking")">Back to List</button> *@
-@* } *@
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</EditForm>
 
-@* @code { *@
-@*     protected override async Task OnInitializedAsync() *@
-@*     { *@
-@*         programList = await ProgramService.GetAllAsync(); *@
-@*     } *@
+<button class="btn btn-secondary" @onclick="NavigateToIndex">Back to List</button>
 
-@*     private async Task CreateAppointmentTracking() *@
-@*     { *@
-@*         await AppointmentService.Create(appointmentTracking); *@
-@*         Navigation.NavigateTo("/AppointmentTracking"); *@
-@*     } *@
-@* } *@
+@code {
+    [SupplyParameterFromForm(FormName = "createAppointmentForm")]
+    private AppointmentTracking? AppointmentTracking{ get; set; }
+    private List<ProgramTracking>? programList = new List<ProgramTracking>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (AppointmentTracking == null) AppointmentTracking = new();
+        programList = await ProgramService.GetAllAsync();
+    }
+
+    private async Task CreateAppointmentTracking()
+    {
+        await AppointmentService.Create(AppointmentTracking!);
+        NavigateToIndex();
+    }
+
+    private void NavigateToIndex()
+    {
+        Navigation.NavigateTo("/AppointmentTrackings/Index");
+    }
+}

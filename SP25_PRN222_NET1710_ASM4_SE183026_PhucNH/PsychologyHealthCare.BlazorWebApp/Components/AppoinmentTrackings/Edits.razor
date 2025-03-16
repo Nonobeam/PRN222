@@ -1,4 +1,4 @@
-﻿@page "/AppointmentTrackings/Edits/{id}"
+﻿@page "/AppointmentTrackings/Edits/{Id}"
 
 @using PsychologyHealthCare.Repository.Models
 @using PsychologyHealthCare.Service
@@ -6,98 +6,101 @@
 @inject IAppointmentTrackingService AppointmentService
 @inject ProgramTrackingService ProgramService
 
-<h3>Edit Appointment</h3>
+<h3>Create Appointment Tracking</h3>
 
-@if (appointmentTracking != null)
-{
-    <EditForm Model="appointmentTracking" OnValidSubmit="HandleValidSubmit">
+@if (AppointmentTracking != null) {
+    <EditForm Model="AppointmentTracking" OnValidSubmit="EditAppointmentTracking" FormName="editAppointmentForm">
         <DataAnnotationsValidator />
         <ValidationSummary />
 
-        <input type="hidden" @bind-value="appointmentTracking.Id" />
-
         <div class="form-group">
             <label>Name</label>
-            <InputText class="form-control" @bind-value="appointmentTracking.Name" />
+            <InputText class="form-control" @bind-Value="AppointmentTracking.Name" />
         </div>
 
         <div class="form-group">
             <label>Start Time</label>
-            <input class="form-control" @bind-value="appointmentTracking.StartTime" />
+            <InputNumber TValue="long" class="form-control" @bind-Value="AppointmentTracking.StartTime" />
         </div>
 
         <div class="form-group">
             <label>End Time</label>
-            <input class="form-control" @bind-value="appointmentTracking.EndTime" />
+            <InputNumber TValue="long" class="form-control" @bind-Value="AppointmentTracking.EndTime" />
         </div>
 
         <div class="form-group">
             <label>Created Date</label>
-            <InputDate class="form-control" @bind-value="appointmentTracking.CreatedDate" />
+            <InputDate class="form-control" @bind-Value="AppointmentTracking.CreatedDate" />
         </div>
 
         <div class="form-group">
             <label>Updated Date</label>
-            <InputDate class="form-control" @bind-value="appointmentTracking.UpdatedDate" />
+            <InputDate class="form-control" @bind-Value="AppointmentTracking.UpdatedDate" />
         </div>
 
         <div class="form-group">
             <label>Rating</label>
-            <InputText class="form-control" @bind-value="appointmentTracking.Rating" />
+            <InputText class="form-control" @bind-Value="AppointmentTracking.Rating" />
         </div>
 
         <div class="form-group">
             <label>Holder</label>
-            <InputText class="form-control" @bind-value="appointmentTracking.Holder" />
+            <InputText class="form-control" @bind-Value="AppointmentTracking.Holder" />
         </div>
 
         <div class="form-group">
             <label>Address</label>
-            <InputText class="form-control" @bind-value="appointmentTracking.Address" />
+            <InputText class="form-control" @bind-Value="AppointmentTracking.Address" />
         </div>
 
         <div class="form-group">
             <label>Type</label>
-            <InputText class="form-control" @bind-value="appointmentTracking.Type" />
+            <InputText class="form-control" @bind-Value="AppointmentTracking.Type" />
         </div>
 
         <div class="form-group">
             <label>System Status</label>
-            <InputText class="form-control" @bind-value="appointmentTracking.SystemStatus" />
+            <InputText class="form-control" @bind-Value="AppointmentTracking.SystemStatus" />
         </div>
 
         <div class="form-group">
             <label>Program Tracking</label>
-            <InputSelect class="form-control" @bind-value="appointmentTracking.ProgramTrackingId">
-                @if (programs != null)
+            <InputSelect class="form-control" @bind-Value="AppointmentTracking.ProgramTrackingId">
+                <option value="">-- Select Program --</option>
+                @foreach (var program in programList!)
                 {
-                    @foreach (var program in programs)
-                    {
-                        <option value="@program.Id">@program.Name</option>
-                    }
+                    <option value="@program.Id">@program.Name</option>
                 }
             </InputSelect>
         </div>
 
-        <button type="submit" class="btn btn-primary">Save</button>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
     </EditForm>
 }
 
+<div class="form-group">
+    <button class="btn btn-secondary" @onclick="NavigateToIndex">Back to List</button>
+</div>
+
 @code {
-    [Parameter] public string Id { get; set; }
-    private AppointmentTracking appointmentTracking;
-    private List<ProgramTracking> programs;
+    [Parameter] public string? Id { get; set; }
+
+    [SupplyParameterFromForm(FormName = "editAppointmentForm")]
+    private AppointmentTracking? AppointmentTracking { get; set; }
+    private List<ProgramTracking>? programList = new List<ProgramTracking>();
 
     protected override async Task OnInitializedAsync()
     {
-        programs = await ProgramService.GetAllAsync();
-        appointmentTracking = await AppointmentService.GetById(Id);
+        AppointmentTracking ??= await AppointmentService.GetById(Id!);
+        programList = await ProgramService.GetAllAsync();
     }
 
-    private async Task HandleValidSubmit()
+    private async Task EditAppointmentTracking()
     {
-        await AppointmentService.Update(appointmentTracking);
-        Navigation.NavigateTo("/AppointmentTrackings/Index");
+        await AppointmentService.Update(AppointmentTracking!);
+        NavigateToIndex();
     }
 
     private void NavigateToIndex()

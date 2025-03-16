@@ -1,95 +1,87 @@
-﻿@* @page "/AppointmentTrackings/Details/{id}" *@
+﻿@page "/AppointmentTrackings/Details/{id}"
+@rendermode InteractiveServer
 
-@* @rendermode InteractiveServer *@
+@using PsychologyHealthCare.Repository.Models
+@using PsychologyHealthCare.Service
+@inject NavigationManager Navigation
+@inject IAppointmentTrackingService AppointmentService
+@inject ProgramTrackingService ProgramService
 
-@* @using PsychologyHealthCare.Repository.Models *@
-@* @using PsychologyHealthCare.Service *@
-@* @inject NavigationManager Navigation *@
+<h3>Appointment Tracking Details</h3>
 
-@* <h3>Test Result Details</h3> *@
+@if (appointmentTracking != null)
+{
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tr>
+                <th>Id</th>
+                <td>@appointmentTracking.Id</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>@appointmentTracking.Name</td>
+            </tr>
+            <tr>
+                <th>Start Time</th>
+                <td>@appointmentTracking.StartTime</td>
+            </tr>
+            <tr>
+                <th>End Time</th>
+                <td>@appointmentTracking.EndTime</td>
+            </tr>
+            <tr>
+                <th>Created Date</th>
+                <td>@appointmentTracking.CreatedDate</td>
+            </tr>
+            <tr>
+                <th>Updated Date</th>
+                <td>@appointmentTracking.UpdatedDate</td>
+            </tr>
+            <tr>
+                <th>Rating</th>
+                <td>@appointmentTracking.Rating</td>
+            </tr>
+            <tr>
+                <th>Holder</th>
+                <td>@appointmentTracking.Holder</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>@appointmentTracking.Address</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>@appointmentTracking.Type</td>
+            </tr>
+            <tr>
+                <th>System Status</th>
+                <td>@appointmentTracking.SystemStatus</td>
+            </tr>
+            <tr>
+                <th>Program Tracking</th>
+                <td>@(programList?.FirstOrDefault(p => p.Id == appointmentTracking.ProgramTrackingId)?.Name ?? "N/A")</td>
+            </tr>
+        </table>
+    </div>
 
-@* @if (testResult == null) *@
-@* { *@
-@*     <p>Loading....</p> *@
-@* } *@
-@* else *@
-@* { *@
-@*     <EditForm Model="testResult" OnValidSubmit="UpdateTestResult"> *@
-@*         <DataAnnotationsValidator /> *@
-@*         <ValidationSummary /> *@
+    <button class="btn btn-secondary" @onclick="NavigateToIndex">Back to List</button>
+}
 
-@*         <table class="table"> *@
-@*             <thead> *@
-@*                 <tr> *@
-@*                     <th>Test Name</th> *@
-@*                     <td> *@
-@*                         <select class="form-control" @bind="testResult.TestId"> *@
-@*                             @foreach (var test in tests) *@
-@*                             { *@
-@*                                 <option value="@test.Id">@test.Name</option> *@
-@*                             } *@
-@*                         </select> *@
-@*                     </td> *@
-@*                 </tr> *@
-@*                 <tr> *@
-@*                     <th>Answers</th> *@
-@*                     <td><input class="form-control" type="text" @bind="testResult.Answers" /></td> *@
-@*                 </tr> *@
-@*                 <tr> *@
-@*                     <th>Score</th> *@
-@*                     <td><input class="form-control" type="number" @bind="testResult.Score" /></td> *@
-@*                 </tr> *@
-@*                 <tr> *@
-@*                     <th>Created At</th> *@
-@*                     <td><input class="form-control" type="datetime-local" @bind="testResult.CompletionDate" /></td> *@
-@*                 </tr> *@
-@*                 <tr> *@
-@*                     <th>Status</th> *@
-@*                     <td><input class="form-control" type="text" @bind="testResult.Status" /></td> *@
-@*                 </tr> *@
-@*                 <tr> *@
-@*                     <th>Created By</th> *@
-@*                     <td><input class="form-control" type="text" @bind="testResult.CreatedBy" /></td> *@
-@*                 </tr> *@
-@*                 <tr> *@
-@*                     <th>Completion Date</th> *@
-@*                     <td>@testResult.CompletionDate.ToString("dd-MM-yyyy HH:mm:ss")</td> *@
-@*                 </tr> *@
-@*                 <tr> *@
-@*                     <td> *@
-@*                         <button class="btn btn-outline-primary" type="submit">Save</button> *@
-@*                     </td> *@
-@*                 </tr> *@
-@*             </thead> *@
-@*         </table> *@
-@*     </EditForm> *@
-@*     <button class="btn btn-danger" @onclick="DeleteTestResult">Delete</button> *@
-@* } *@
+@code {
+    private AppointmentTracking? appointmentTracking;
+    private List<ProgramTracking> programList = new List<ProgramTracking>();
 
-@* @code { *@
-@*     private TestResult testResult; *@
-@*     private List<AssessmentTest> tests; *@
+    [Parameter]
+    public string? Id { get; set; }
 
-@*     [Parameter] *@
-@*     public string TestResultId { get; set; } *@
+    protected override async Task OnInitializedAsync()
+    {
+        programList = await ProgramService.GetAllAsync();
+        appointmentTracking = await AppointmentService.GetById(Id!);
+    }
 
-@*     protected override async Task OnInitializedAsync() *@
-@*     { *@
-@*         tests = await TestAssessmentService.GetAllAsync(); *@
-@*         testResult = await TestResultService.GetById(TestResultId); *@
-@*     } *@
-
-@*     private async Task DeleteTestResult() *@
-@*     { *@
-@*         await TestResultService.Delete(testResult); *@
-@*         Navigation.NavigateTo("/TestResults/Index"); *@
-@*     } *@
-
-@*     private async Task UpdateTestResult() *@
-@*     { *@
-@*         testResult.CompletionDate = DateTime.Now; *@
-@*         testResult.Test = null; *@
-@*         await TestResultService.Update(testResult); *@
-@*         Navigation.NavigateTo("/TestResults/Index"); *@
-@*     } *@
-@* } *@
+    private void NavigateToIndex()
+    {
+        Navigation.NavigateTo("/AppointmentTrackings/Index");
+    }
+}
