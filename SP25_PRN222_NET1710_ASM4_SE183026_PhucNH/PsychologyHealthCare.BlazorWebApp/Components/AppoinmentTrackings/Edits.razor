@@ -1,5 +1,7 @@
 ﻿@page "/AppointmentTrackings/Edits/{Id}"
+@attribute [Authorize(Roles = "2")]
 
+@using Microsoft.AspNetCore.Authorization
 @using PsychologyHealthCare.Repository.Models
 @using PsychologyHealthCare.Service
 @inject NavigationManager Navigation
@@ -12,6 +14,10 @@
     <EditForm Model="AppointmentTracking" OnValidSubmit="EditAppointmentTracking" FormName="editAppointmentForm">
         <DataAnnotationsValidator />
         <ValidationSummary />
+
+        <div class="form-group" hidden>
+            <InputText class="form-control" @bind-Value="AppointmentTracking.Id" />
+        </div>
 
         <div class="form-group">
             <label>Name</label>

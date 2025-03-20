@@ -11,8 +11,7 @@ namespace PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service
         Task<int> Create(MedicineInformation medicineInformation);
         Task<int> Update(MedicineInformation medicineInformation);
         Task<bool> Delete(MedicineInformation medicineInformation);
-        Task<List<MedicineInformation>> Search(string active, string expire, string warn, int pageNumber);
-        Task<int> GetTotalCountAsync(string? active, string? expire, string? warn);
+        Task<List<MedicineInformation>> Search(string active, string expire, string warn);
     }
 
     public class MedicineInformationService : IMedicineService
@@ -34,9 +33,9 @@ namespace PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service
             return await _repository.GetByIdAsync(id);
         }
 
-        public async Task<List<MedicineInformation>> Search(string active, string expire, string warn, int pageNumber)
+        public async Task<List<MedicineInformation>> Search(string active, string expire, string warn)
         {
-            return await _repository.Search(active, expire, warn, pageNumber);
+            return await _repository.Search(active, expire, warn);
         }
 
         public async Task<int> Create(MedicineInformation medicineInformation) => await _repository.CreateAsync(medicineInformation);
@@ -44,7 +43,5 @@ namespace PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service
         public async Task<int> Update(MedicineInformation medicineInformation) => await _repository.UpdateAsync(medicineInformation);
 
         public async Task<bool> Delete(MedicineInformation medicineInformation) => await _repository.RemoveAsync(medicineInformation);
-
-        public async Task<int> GetTotalCountAsync(string? active, string? expire, string? warn) => await _repository.GetTotalCountAsync(active, expire, warn);
     }
 }

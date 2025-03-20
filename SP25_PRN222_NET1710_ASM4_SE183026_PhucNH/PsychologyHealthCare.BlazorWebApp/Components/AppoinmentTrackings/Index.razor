@@ -1,5 +1,7 @@
 ﻿@page "/AppointmentTrackings/Index"
+@attribute [Authorize(Roles = "2, 3")]
 
+@using Microsoft.AspNetCore.Authorization
 @attribute [Microsoft.AspNetCore.Authorization.Authorize]
 @using PsychologyHealthCare.Repository.Models;
 @using PsychologyHealthCare.Service;

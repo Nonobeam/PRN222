@@ -2,24 +2,27 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PsychologyHealthCare.Service;
 using PsychologyHealthCare.Repository.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
 {
-    [Authorize]
+    [Authorize(Roles = "2, 3")]
     public class IndexModel : PageModel
     {
-        public string Name { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string Name { get; set; } = string.Empty;
 
-        public string Rating { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string Rating { get; set; } = string.Empty;
 
-        public string Address { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string Address { get; set; } = string.Empty;
 
-        public int PageNumber { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public int PageNumber { get; set; } = 1;
 
         public readonly int PageSize = 3;
-
         public int TotalPages { get; set; }
-
         public IList<AppointmentTracking> AppointmentTracking { get; set; } = default!;
 
         private readonly IAppointmentTrackingService _appointmentService;
@@ -44,17 +47,8 @@ namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
                 .Take(PageSize)
                 .ToList();
 
-            Initialize(name, rating, address, pageNumber, totalPages, pagedAppointments);
-        }
-
-        private void Initialize(string name, string rating, string address, int pageNumber, int totalPages, IList<AppointmentTracking> appointmentTrackings)
-        {
-            Name = name;
-            Rating = rating;
-            Address = address;
-            PageNumber = pageNumber;
             TotalPages = totalPages;
-            AppointmentTracking = appointmentTrackings;
+            AppointmentTracking = pagedAppointments;
         }
     }
 }

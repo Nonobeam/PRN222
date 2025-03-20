@@ -16,29 +16,29 @@ namespace PsychologyHealthCare.Repository
         {
             return await _context.AppointmentTrackings
                 .Include(a => a.ProgramTracking)
-                .FirstOrDefaultAsync(a => a.Id == id && a.SystemStatus == "ACTIVE");
+                .FirstOrDefaultAsync(a => a.Id == id);
         }
 
         public async Task<List<AppointmentTracking>> GetAllAppointmentTrackingsAsync()
         {
             return await _context.AppointmentTrackings
                 .Include(a => a.ProgramTracking)
-                .Where(a => a.SystemStatus == "ACTIVE")
                 .ToListAsync();
         }
 
-        public async Task<List<AppointmentTracking>> Search(string name, string rating, string address)
+        public async Task<List<AppointmentTracking>> Search(string a, string b, string c)
         {
-            var appointments = await _context.AppointmentTrackings
+            var trimA = a?.Trim() ?? string.Empty;
+            var trimB = b?.Trim() ?? string.Empty;
+            var trimC = c?.Trim() ?? string.Empty;
+            return await _context.AppointmentTrackings
                 .Include(a => a.ProgramTracking)
                 .Where(a =>
-                    (a.Name.Contains(name) || string.IsNullOrEmpty(name)) &&
-                    (a.Rating.Equals(rating) || string.IsNullOrEmpty(rating)) &&
-                    (a.Address.Contains(address) || string.IsNullOrEmpty(address))
+                    (string.IsNullOrEmpty(trimA) || a.Name.Contains(trimA)) &&
+                    (string.IsNullOrEmpty(trimB) || a.Rating.Equals(trimB)) &&
+                    (string.IsNullOrEmpty(trimC) || a.Address.Contains(trimC))
                 )
                 .ToListAsync();
-
-            return appointments;
         }
     }
 }

@@ -1,5 +1,14 @@
-﻿<h3>Forbidden</h3>
+﻿@page "/access-denied"
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+
+<h3>Forbidden</h3>
+<p>You do not have permission to access this page.</p>
+<button class="btn btn-primary" @onclick="GoHome">Home</button>
 
 @code {
-
+    private void GoHome()
+    {
+        NavigationManager.NavigateTo("/AppointmentTrackings/Index");
+    }
 }

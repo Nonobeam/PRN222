@@ -20,7 +20,7 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
             _programService = programService;
         }
 
-        [Authorize]
+        [Authorize(Roles = "2, 3")]
         public async Task<IActionResult> Index(string name, string rating, string address, int pageNumber = 1)
         {
             ViewData["name"] = name;
@@ -43,6 +43,7 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
             return View(appointmentsViewModel);
         }
 
+        [Authorize(Roles = "2")]
         private AppointmentViewModel GetPagedAppointments(IEnumerable<AppointmentTracking> appointments, int pageNumber, int pageSize)
         {
             var totalItems = appointments.Count();
@@ -78,6 +79,7 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "2")]
         public async Task<IActionResult> Create(AppointmentTracking appointment)
         {
             if (ModelState.IsValid)
@@ -89,7 +91,7 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
             return View(appointment);
         }
 
-        [Authorize(Roles = "1,2")]
+        [Authorize(Roles = "2")]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null) return NotFound();
@@ -102,7 +104,7 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "1,2")]
+        [Authorize(Roles = "2")]
         public async Task<IActionResult> Edit([Bind("Id,Name,StartTime,EndTime,Rating,Holder,Address,ProgramTrackingId,CreatedDate,UpdatedDate,Type,SystemStatus")] AppointmentTracking appointmentTracking)
         {
             if (ModelState.IsValid)
@@ -120,7 +122,7 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
             return View(appointmentTracking);
         }
 
-        [Authorize(Roles = "1,2")]
+        [Authorize(Roles = "2")]
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null) return NotFound();
@@ -131,7 +133,7 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "1,2")]
+        [Authorize(Roles = "2")]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var appointment = await _appointmentService.GetById(id);

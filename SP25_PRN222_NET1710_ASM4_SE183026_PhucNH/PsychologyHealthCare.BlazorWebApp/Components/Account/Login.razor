@@ -56,7 +56,7 @@
         errorMessage = "";
 
         var userAccount = await _userAccountService.Authenticate(loginRequest.UserName, loginRequest.Password);
-        if (userAccount != null)
+        if (userAccount != null && (userAccount.RoleId == 2 || userAccount.RoleId == 3))
         {
             var claims = new List<Claim>
                 {
@@ -72,9 +72,12 @@
 
             navigation.NavigateTo("/AppointmentTrackings/Index");
         }
-        else
+        else if (userAccount == null)
         {
             errorMessage = "Invalid username or password.";
+        } else
+        {
+            errorMessage = "You don't have permission for this.";
         }
     }
 }

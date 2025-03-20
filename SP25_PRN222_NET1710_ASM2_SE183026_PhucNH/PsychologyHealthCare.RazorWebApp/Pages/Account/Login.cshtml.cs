@@ -7,7 +7,6 @@ using PsychologyHealthCare.Service;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity.Data;
 using PsychologyHealthCare.RazorWebApp.Models;
-using System.Diagnostics;
 
 namespace PsychologyHeathCare.RazorWebApp.Pages.Account
 {
@@ -35,7 +34,7 @@ namespace PsychologyHeathCare.RazorWebApp.Pages.Account
 			try
 			{
 				var userAccount = await _userAccountService.Authenticate(LoginRequest.UserName, LoginRequest.Password);
-				if (userAccount != null)
+				if (userAccount != null && (userAccount.RoleId == 2 || userAccount.RoleId == 3))
 				{
 					var claims = new List<Claim>
 						{
@@ -49,7 +48,12 @@ namespace PsychologyHeathCare.RazorWebApp.Pages.Account
 					Response.Cookies.Append("UserName", userAccount.FullName);
 					Response.Cookies.Append("Role", userAccount.RoleId.ToString());
 					return RedirectToPage("/AppointmentTrackings/Index");
-				}
+				} 
+				else
+				{
+                    ModelState.AddModelError("", "You do not have permissions to do this function!");
+                    return Page();
+                }
 			}
 			catch (Exception)
 			{

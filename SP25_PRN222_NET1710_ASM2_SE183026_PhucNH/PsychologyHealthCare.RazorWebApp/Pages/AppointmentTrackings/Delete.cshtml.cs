@@ -8,8 +8,8 @@ using PsychologyHeathCare.RazorWebApp.Hubs;
 
 namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
 {
-    [Authorize(Roles = "1, 2")]
-	public class DeleteModel : PageModel
+    [Authorize(Roles = "2")]
+    public class DeleteModel : PageModel
     {
         private readonly IAppointmentTrackingService _appointmentService;
         private readonly IHubContext<PsychologyHealthCareHub> _hubContext;

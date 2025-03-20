@@ -60,8 +60,8 @@
             {
                 <tr id="@item.Id">
                     <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                    <th>@Html.DisplayNameFor(model => item.StartTime)</th>
-                    <th>@Html.DisplayNameFor(model => item.EndTime)</th>
+                    <td>@Html.DisplayNameFor(modelItem => item.StartTime)</td>
+                    <td>@Html.DisplayNameFor(modelItem => item.EndTime)</td>
                     <td>@item.CreatedDate.ToString("dd-MM-yyyy HH:mm:ss")</td>
                     <td>@item.UpdatedDate?.ToString("dd-MM-yyyy HH:mm:ss")</td>
                     <td>@Html.DisplayFor(modelItem => item.Rating)</td>

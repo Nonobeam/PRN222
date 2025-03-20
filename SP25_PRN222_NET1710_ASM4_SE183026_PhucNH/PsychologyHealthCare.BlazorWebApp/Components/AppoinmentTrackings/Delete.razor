@@ -1,5 +1,7 @@
 ﻿@page "/AppointmentTrackings/Delete/{Id}"
+@attribute [Authorize(Roles = "2")]
 
+@using Microsoft.AspNetCore.Authorization
 @using PsychologyHealthCare.Repository.Models
 @using PsychologyHealthCare.Service
 @inject IAppointmentTrackingService AppointmentService

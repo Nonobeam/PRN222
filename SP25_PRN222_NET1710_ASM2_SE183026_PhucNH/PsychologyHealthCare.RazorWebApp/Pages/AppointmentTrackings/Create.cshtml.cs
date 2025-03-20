@@ -7,7 +7,7 @@ using PsychologyHealthCare.Service;
 
 namespace PsychologyHealthCare.RazorWebApp.Pages.AppointmentTrackings
 {
-    [Authorize]
+    [Authorize(Roles = "2")]
     public class CreateModel : PageModel
     {
         private readonly IAppointmentTrackingService _appointmentService;

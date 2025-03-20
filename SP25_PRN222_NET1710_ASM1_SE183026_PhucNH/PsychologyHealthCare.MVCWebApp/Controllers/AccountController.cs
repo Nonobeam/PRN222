@@ -29,7 +29,7 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
             {
                 var userAccount = await _userAccountService.Authenticate(userName, password);
 
-                if (userAccount != null)
+                if (userAccount != null && (userAccount.RoleId == 2 || userAccount.RoleId == 3))
                 {
                     var claims = new List<Claim>
                         {
@@ -44,7 +44,11 @@ namespace PsychologyHealthCare.MVCWebApp.Controllers
                     Response.Cookies.Append("Role", userAccount.RoleId.ToString());
 
                     return RedirectToAction("Index", "AppointmentTracking");
-                } 
+                } else
+                {
+                    ModelState.AddModelError("", "You do not have permissions to do this function!");
+                    return View();
+                }
             }
             catch (Exception ex)
             {

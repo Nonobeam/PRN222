@@ -6,7 +6,7 @@ using PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service;
 
 namespace PharmaceuticalManagement_NguyenHuuPhuc.Pages.Medical
 {
-    [Authorize]
+    [Authorize(Roles = "2, 3")]
     public class IndexModel : PageModel
     {
         [BindProperty(SupportsGet = true)]
@@ -22,8 +22,6 @@ namespace PharmaceuticalManagement_NguyenHuuPhuc.Pages.Medical
         public int PageNumber { get; set; }
 
         public readonly int PageSize = 3;
-
-        [BindProperty(SupportsGet = true)]
         public int TotalPages { get; set; }
 
         public IList<MedicineInformation> MedicineInformation { get; set; } = default!;
@@ -35,26 +33,22 @@ namespace PharmaceuticalManagement_NguyenHuuPhuc.Pages.Medical
             _medicineService = medicineService;
         }
 
-        public async Task<IActionResult> OnGetAsync(string? active, string? expire, string? warn, int pageNumber = 1)
+        public async Task<IActionResult> OnGetAsync(string active, string expire, string warn, int pageNumber = 1)
         {
-            List<MedicineInformation> totalItems = await _medicineService.GetAllAsync();
-            TotalPages = (int)Math.Ceiling(totalItems.Count / (double)PageSize);
-            MedicineInformation = await _medicineService.GetAllAsync(pageNumber);
+            var items = string.IsNullOrEmpty(active) && string.IsNullOrEmpty(expire) && string.IsNullOrEmpty(warn)
+                ? await _medicineService.GetAllAsync()
+                : await _medicineService.Search(active, expire, warn);
 
-            if (!string.IsNullOrEmpty(active) || !string.IsNullOrEmpty(expire) || !string.IsNullOrEmpty(warn))
-            {
-                if (User.IsInRole("3"))
-                {
-                    var totalSearchItems = await _medicineService.GetTotalCountAsync(active, expire, warn);
-                    TotalPages = (int)Math.Ceiling(totalSearchItems / (double)PageSize);
-                    MedicineInformation = await _medicineService.Search(active, expire, warn, pageNumber);
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "You do not have permission to search.");
-                }
-            }
+            var totalItems = items.Count();
+            var totalPages = (int)Math.Ceiling(totalItems / (double) PageSize);
 
+            var pagedItems = items
+                .Skip((pageNumber - 1) * PageSize)
+                .Take(PageSize)
+                .ToList();
+
+            TotalPages = totalPages;
+            MedicineInformation = pagedItems;
             return Page();
         }
     }

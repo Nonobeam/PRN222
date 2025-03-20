@@ -30,21 +30,14 @@ namespace PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Repository
                 .Include(m => m.Manufacturer).FirstOrDefaultAsync(m => m.MedicineId == id);
         }
 
-        public async Task<int> GetTotalCountAsync(string? active, string? expire, string? warn)
+        public async Task<List<MedicineInformation>> Search(string a, string b, string c)
         {
+            var trimA = a?.Trim() ?? string.Empty;
+            var trimB = b?.Trim() ?? string.Empty;
+            var trimC = c?.Trim() ?? string.Empty;
             return await _context.MedicineInformations
                 .Include(q => q.Manufacturer)
-                .Where(q => (q.ActiveIngredients.Contains(active) || q.ExpirationDate.ToString().Contains(expire) || q.WarningsAndPrecautions.Contains(warn)))
-                .CountAsync();
-        }
-
-        public async Task<List<MedicineInformation>> Search(string active, string expire, string warn, int pageNumber)
-        {
-            return await _context.MedicineInformations
-                .Include(q => q.Manufacturer)
-                .Where(q => (q.ActiveIngredients.Contains(active) || q.ExpirationDate.ToString().Contains(expire) || q.WarningsAndPrecautions.Contains(warn)))
-                .Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize)
+                .Where(q => (q.ActiveIngredients.Contains(trimA) && q.ExpirationDate.ToString().Contains(trimB) && q.WarningsAndPrecautions.Contains(trimC)))
                 .ToListAsync();
         }
     }
