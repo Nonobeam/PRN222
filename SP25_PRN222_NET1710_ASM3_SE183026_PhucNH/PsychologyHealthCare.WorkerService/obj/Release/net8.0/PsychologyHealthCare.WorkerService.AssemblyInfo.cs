@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PsychologyHealthCare.WorkerService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c12bec085e99174e2a427265afdf5deb2d56649")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e29147e8de19e58c5fa20e977bb3132a70ea068")]
 [assembly: System.Reflection.AssemblyProductAttribute("PsychologyHealthCare.WorkerService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PsychologyHealthCare.WorkerService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

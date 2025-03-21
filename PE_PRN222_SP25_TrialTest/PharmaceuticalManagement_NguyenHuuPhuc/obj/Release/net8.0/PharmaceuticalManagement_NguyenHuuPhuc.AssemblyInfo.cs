@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PharmaceuticalManagement_NguyenHuuPhuc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db37f7f13eb77f0217f0a54427f8a9f7b5022caa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e29147e8de19e58c5fa20e977bb3132a70ea068")]
 [assembly: System.Reflection.AssemblyProductAttribute("PharmaceuticalManagement_NguyenHuuPhuc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PharmaceuticalManagement_NguyenHuuPhuc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

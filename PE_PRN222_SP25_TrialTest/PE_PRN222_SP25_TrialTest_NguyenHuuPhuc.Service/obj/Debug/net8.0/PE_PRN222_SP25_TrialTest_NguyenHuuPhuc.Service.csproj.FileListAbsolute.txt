@@ -1,0 +1,15 @@
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\bin\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.deps.json
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\bin\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.dll
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\bin\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.pdb
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\bin\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Repository.dll
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\bin\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Repository.pdb
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.csproj.AssemblyReference.cache
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.AssemblyInfo.cs
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\PE_PRN22.AED788D2.Up2Date
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.dll
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\refint\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.dll
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.pdb
+C:\Users\Asus\Documents\semester_7\PRN222\PE_PRN222_SP25_TrialTest\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service\obj\Debug\net8.0\ref\PE_PRN222_SP25_TrialTest_NguyenHuuPhuc.Service.dll

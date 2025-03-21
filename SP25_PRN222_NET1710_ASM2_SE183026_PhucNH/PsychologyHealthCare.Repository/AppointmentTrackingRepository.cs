@@ -23,6 +23,7 @@ namespace PsychologyHealthCare.Repository
         {
             return await _context.AppointmentTrackings
                 .Include(a => a.ProgramTracking)
+                .OrderByDescending(a => a.Name)
                 .ToListAsync();
         }
 
@@ -38,6 +39,7 @@ namespace PsychologyHealthCare.Repository
                     (string.IsNullOrEmpty(trimB) || a.Rating.Equals(trimB)) &&
                     (string.IsNullOrEmpty(trimC) || a.Address.Contains(trimC))
                 )
+                .OrderByDescending(a => a.Name)
                 .ToListAsync();
         }
     }

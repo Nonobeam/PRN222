@@ -24,6 +24,7 @@ namespace PsychologyHealthCare.Repository
             return await _context.AppointmentTrackings
                 .Include(a => a.ProgramTracking)
                 .Where(a => a.SystemStatus == "ACTIVE")
+                .OrderByDescending(a => a.Name)
                 .ToListAsync();
         }
 
@@ -36,6 +37,7 @@ namespace PsychologyHealthCare.Repository
                     (a.Rating.Equals(rating) || string.IsNullOrEmpty(rating)) &&
                     (a.Address.Contains(address) || string.IsNullOrEmpty(address))
                 )
+                .OrderByDescending(a => a.Name)
                 .ToListAsync();
 
             return appointments;

@@ -27,6 +27,14 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                    <div class="nav-item text-nowrap">
+                        Welcome
+                        <strong>@Context.Request.Cookies["UserName"].ToString()</strong>
+                        <a asp-controller="Account" asp-action="Logout">Logout</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>

@@ -64,7 +64,7 @@ namespace PsychologyHeathCare.RazorWebApp.Pages.Account
 			return Page();
 		}
 
-		public async Task<IActionResult> OnGetLogout()
+		public async Task<IActionResult> OnPostLogoutAsync()
 		{
 			Response.Cookies.Delete("UserName");
 			Response.Cookies.Delete("Role");

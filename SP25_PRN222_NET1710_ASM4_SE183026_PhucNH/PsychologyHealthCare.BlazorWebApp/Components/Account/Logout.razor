@@ -1,0 +1,28 @@
+﻿@page "/logout"
+@inject NavigationManager navigation
+@using Microsoft.AspNetCore.Authentication;
+
+<div class="row">
+    <div class="col-12">
+        <div class="text-center mt-2">
+            <span class="text-danger fw-bolder">
+                You have successfully log out
+            </span>
+        </div>
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    public HttpContext httpContext { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        if (httpContext.User.Identity.IsAuthenticated)
+        {
+            await httpContext.SignOutAsync();
+            navigation.NavigateTo("/login", true);
+        }
+    }
+}
